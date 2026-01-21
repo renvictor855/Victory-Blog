@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = 'Victory Blog'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
