@@ -1,0 +1,19 @@
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.footer-tags .tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  color: white;
+  background-color: #888;
+}
+
+.tag-frame { background-color: #4CAF50; }     /* 绿色 Hugo */
+.tag-theme { background-color: #2196F3; }     /* 蓝色 Stack */
+.tag-cdn   { background-color: #FF9800; }     /* 橙色 CDN */
+.tag-license { background-color: #9C27B0; }   /* 紫色 License */

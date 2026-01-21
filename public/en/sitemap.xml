@@ -39,11 +39,6 @@
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/categories/"
                 />
@@ -51,6 +46,11 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -66,11 +66,6 @@
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/tags/"
                 />
@@ -78,6 +73,11 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
