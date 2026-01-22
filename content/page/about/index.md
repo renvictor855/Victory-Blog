@@ -18,7 +18,7 @@ menu:
 comments: false # 是否开启评论
 ---
 
-# 👨‍💻 关于Victor Rim
+## 👨‍💻 关于Victor Rim
 **团队**：RYQi GROUP
 
 **爱好**：摄影、随笔、折腾、羽球
@@ -29,7 +29,7 @@ comments: false # 是否开启评论
 
 > 永远保持好奇心。
 
-# 🤵‍♂️ 关于RYQi GROUP
+## 🤵‍♂️ 关于RYQi GROUP
 **创建时间**：2022.04
 
 **主要经营**：搭建个人博客，转卖域名服务，纯数字精品Google Account的售卖，建站服务，节点搭建服务
@@ -40,7 +40,7 @@ comments: false # 是否开启评论
 
 > RYQi GROUP绝对是一只潜力股。
 
-# 🏠 关于Victory Blog
+## 🏠 关于Victory Blog
 **博客声明**：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站
 
 **博客框架**：[Hugo](https://gohugo.io/) 0.154.5
@@ -55,28 +55,32 @@ comments: false # 是否开启评论
 
 **版权声明**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-# ⏳ 建站历史
-## 2022-03
+## ⏳ 建站历史
+### 2022-03
    Hello World! （采用WordPress+Oracle Cloud）
-## 2022-04
+### 2022-04
    Hello Hexo! （采用Hexo+GitHub+CloudFlare）
-## 2026-01-03
+### 2026-01-03
    Hello Hexo again! （采用Hexo+GitHub+CloudFlare）
-## 2026-01-17
+### 2026-01-17
    Goodbye Hexo! （由于JavaScript对我实在过于麻烦，放弃使用Hexo）
-## 2026-01-21
+### 2026-01-21
    Hello Hugo！ （采用Hugo+GitHub+CloudFlare）
 
-# 👍 投喂作者
+## 👍 投喂作者
 由于网站建设与维护实属不易，如果您想支持我的博客，可以扫描下方二维码进行投喂，非常感谢您的支持~ 🐨🐨🐨
 
 （投喂时请备注自己的昵称，博主收到后将会为你单开一页博客鸣谢）
+
 <div style="text-align: center;">
-  <img src="https://ibb.co/fVwVxTx3" 
-       style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%;" />
+  <a href="https://ibb.co/fVwVxTx3">
+    <img src="https://i.ibb.co/kVCVSPSL/image.jpg" 
+         alt="投喂码" 
+         style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;">
+  </a>
 </div>
 
-# 📬 联系方式
+## 📬 联系方式
 欢迎您，朋友！遇到即是缘分~
 
 **邮箱**：renvictor855@gmail.com
