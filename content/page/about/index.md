@@ -1,6 +1,6 @@
 ---
 title: "关于"
-description: "这里是关于我的介绍"
+description: "👋 Hello，我是Victor Rim"
 date: 2026-01-22
 aliases:
     - about-us
@@ -18,29 +18,42 @@ menu:
 comments: false # 是否开启评论
 ---
 
-# 👋 Hello，我是Victor Rim
 # 👨‍💻 关于Victor Rim
 **团队**：RYQi GROUP
+
 **爱好**：摄影、随笔、折腾、羽球
+
 **技能**：精通Markdown语言，会一点点Go语言、Python、html，熟练使用Hexo和Hugo建立个人静态博客
+
 **姓氏**：其实姓任（Im），英文名应该是Victor Im……Rim是林姓~改了个姓
+
 > 永远保持好奇心。
 
 # 🤵‍♂️ 关于RYQi GROUP
 **创建时间**：2022.04
+
 **主要经营**：搭建个人博客，转卖域名服务，纯数字精品Google Account的售卖，建站服务，节点搭建服务
+
 **团队人数**：巅峰时期足足有2人，后来吧，Umm，都快黄了，现在仅我1人
+
 **经营情况**：总盈利CNY：120元（2022.04-2023.01），目前重新营业
+
 > RYQi GROUP绝对是一只潜力股。
 
 # 🏠 关于Victory Blog
 **博客声明**：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站
+
 **博客框架**：[Hugo](https://gohugo.io/) 0.154.5
+
 **博客主题**：[Stack](https://stack.jimmycai.com/) 3.30.0
+
 **托管部署**：源码托管于[GitHub](https://github.com/)，网站部署于[CloudFlare](https://www.cloudflare.com/)
+
 **评论系统**：目前暂无，计划将采用[Twikoo](https://twikoo.js.org/),敬请期待~
+
 **访问统计**：目前暂无，计划将采用[Umami](https://umami.xalaok.top/share/2ndVFyWbLflp6As3/),敬请期待~
-**版权声明**：[CC BY-NC-SA 4.0]（https://creativecommons.org/licenses/by-nc-sa/4.0/）
+
+**版权声明**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # ⏳ 建站历史
 ## 2022-03
@@ -55,15 +68,23 @@ comments: false # 是否开启评论
    Hello Hugo！ （采用Hugo+GitHub+CloudFlare）
 
 # 👍 投喂作者
-由于网站建设与维护实属不易，如果您想支持我的博客，可以扫描下方二维码进行投喂（投喂时请备注自己的昵称，博主收到后将会为你单开一页博客鸣谢），非常感谢您的支持~ 🐨🐨🐨
+由于网站建设与维护实属不易，如果您想支持我的博客，可以扫描下方二维码进行投喂，非常感谢您的支持~ 🐨🐨🐨
+
+（投喂时请备注自己的昵称，博主收到后将会为你单开一页博客鸣谢）
 <div style="text-align: center;">
   <img src="http://youke.xn--y7xa690gmna.cn/s1/2026/01/22/6972026812fa8.webp" 
        style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%;" />
 </div>
+
 # 📬 联系方式
 欢迎您，朋友！遇到即是缘分~
+
 **邮箱**：renvictor855@gmail.com
+
 **商务合作+微信**：RYQIGROUP
+
 **找我玩+QQ**：1010289577
+
 **知乎名**：Victor Rim
+
 **Telegram**:@renvictor855
