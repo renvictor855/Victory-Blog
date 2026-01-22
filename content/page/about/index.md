@@ -72,7 +72,7 @@ comments: false # 是否开启评论
 
 （投喂时请备注自己的昵称，博主收到后将会为你单开一页博客鸣谢）
 <div style="text-align: center;">
-  <img src="http://youke.xn--y7xa690gmna.cn/s1/2026/01/22/6972026812fa8.webp" 
+  <img src="https://ibb.co/fVwVxTx3" 
        style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%;" />
 </div>
 
