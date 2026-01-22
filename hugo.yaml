@@ -1,3 +1,4 @@
+ignoreLogs: ["shortcode-x-getremote", "shortcode-vimeo-simple"]
 baseurl: https://ryqi.top/
 languageCode: zh-cn
 theme: hugo-theme-stack
@@ -14,22 +15,6 @@ DefaultContentLanguage: zh-cn
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
-
-languages:
-    zh-cn:
-        languageName: 简体中文
-        title: Victory Blog  # 你的中文标题
-        weight: 1
-        params:
-            sidebar:
-                subtitle: 胜利博客，奔赴每一场属于自己的胜利✌️ # 你的中文简介
-    en:
-        languageName: English
-        title: Victory Blog  # 你的英文标题
-        weight: 2
-        params:
-            sidebar:
-                subtitle: Victory Blog, pursuing every victory that belongs to you ✌️ # 你的英文简介
 
 services:
     # Change it to your Disqus shortname before using
@@ -70,11 +55,23 @@ params:
 
     sidebar:
         emoji: 😁
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 胜利博客，奔赴每一场属于自己的胜利✌
         avatar:
             enabled: true
             local: true
             src: "img/avatar.jpg"
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/CaiJimmy/hugo-theme-stack
+          params:
+              icon: brand-github
+
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com
+          params:
+              icon: brand-twitter
 
     article:
         math: false
@@ -214,20 +211,27 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
+  main:
+    - identifier: home
+      name: 首页  # 改成中文
+      url: /
+      params:
+        icon: home
+        weight: 1
+    - identifier: archives
+      name: 归档
+      url: /page/archives/  # 确保路径包含 /page/
+      params:
+        icon: archives
+        weight: 2
 
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
+    - identifier: search
+      name: 搜索
+      url: /page/search/    # 确保路径包含 /page/
+      params:
+        icon: search
+        weight: 3
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
 
 related:
     includeNewer: true
