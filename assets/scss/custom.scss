@@ -602,14 +602,3 @@ kbd {
 .sidebar header .site-avatar .site-logo:hover {
   transform: rotate(360deg); // 旋转角度为360度
 }
-
-.sidebar-profile .emoji {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 1.5rem;
-  background-color: white;
-  border-radius: 50%;
-  padding: 2px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-}
