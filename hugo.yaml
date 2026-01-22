@@ -22,14 +22,14 @@ languages:
         weight: 1
         params:
             sidebar:
-                subtitle: 欢迎来到Victory Blog # 你的中文简介
+                subtitle: 胜利博客，奔赴每一场属于自己的胜利✌️ # 你的中文简介
     en:
         languageName: English
         title: Victory Blog  # 你的英文标题
         weight: 2
         params:
             sidebar:
-                subtitle: Welcome to Victory Blog # 你的英文简介
+                subtitle: Victory Blog, pursuing every victory that belongs to you ✌️ # 你的英文简介
 
 services:
     # Change it to your Disqus shortname before using
@@ -69,12 +69,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 😁
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: "img/avatar.jpg"
 
     article:
         math: false
