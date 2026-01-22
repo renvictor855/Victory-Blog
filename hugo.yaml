@@ -1,56 +1,35 @@
-baseurl: https://example.com/
-languageCode: en-us
+baseurl: https://ryqi.top/
+languageCode: zh-cn
 theme: hugo-theme-stack
-title: Example Site
-copyright: Example Person
+title: Victory Blog
+copyright: Victor Rim
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 languages:
-    en:
-        languageName: English
-        title: Example Site
+    zh-cn:
+        languageName: 简体中文
+        title: Victory Blog  # 你的中文标题
         weight: 1
         params:
             sidebar:
-                subtitle: Example description
-    zh-cn:
-        languageName: 简体中文
-        title: 演示站点
+                subtitle: 欢迎来到Victory Blog # 你的中文简介
+    en:
+        languageName: English
+        title: Victory Blog  # 你的英文标题
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
-
-    zh-tw:
-        languageName: 正體中文
-        title: 演示站點
-        weight: 2
-        params:
-            sidebar:
-                subtitle: 演示說明
-
-    ja:
-        languageName: 日本語
-        title: サンプルサイト
-        weight: 2
-        params:
-            sidebar:
-                subtitle: サンプル説明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            sidebar:
-                subtitle: وصف تجريبي
+                subtitle: Welcome to Victory Blog # 你的英文简介
 
 services:
     # Change it to your Disqus shortname before using
@@ -72,11 +51,18 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /favicon.jpg
 
     footer:
-        since: 2020
-        customText:
+      since: 2020
+      customText: |
+        <div class="footer-tags">
+          <span class="tag tag-frame">Frame: Hugo</span>
+          <span class="tag tag-theme">Theme: Stack</span>
+          <span class="tag tag-cdn">CDN: Cloudflare</span>
+          <span class="tag tag-cdn">CDN: Vercel</span>
+          <span class="tag tag-license">License: CC BY-NC-SA 4.0</span>
+        </div>
 
     dateFormat:
         published: Jan 02, 2006
