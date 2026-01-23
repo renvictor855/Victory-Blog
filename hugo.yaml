@@ -231,6 +231,12 @@ menu:
           params:
              icon: shopping-cart-heart
           weight: 1
+        - identifier: changelog
+          name: 更新日志
+          url: /changelog/  # 对应 content/changelog/ 文件夹
+          weight: 2
+          params:
+             icon: history
 
 related:
     includeNewer: true
