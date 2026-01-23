@@ -6,56 +6,74 @@ url: "/goods/"
 ---
 
 <style>
+/* 核心容器：增加间距，让视觉更开阔 */
 .goods-grid {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important;
-    gap: 20px !important;
-    margin: 20px 0 !important;
+    gap: 30px 20px !important;
+    margin: 30px 0 !important;
 }
+
+/* 卡片样式：对标图1的圆角和纯白质感 */
 .good-card {
-    background: var(--card-background);
-    border-radius: 12px;
-    box-shadow: var(--shadow-l1);
+    background: #ffffff;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--border-color);
     text-align: center;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    /* 调整边框颜色，使其更淡更高级 */
+    border: 1px solid rgba(0,0,0,0.05);
 }
+
 .good-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
+
+/* 图片区域：保持正方形比例或稍高，背景设为浅灰防白底图消失 */
 .good-image {
     width: 100%;
-    height: 160px; /* 稍微加高一点图片 */
-    object-fit: cover;
-    border-bottom: 1px solid var(--border-color);
+    height: 200px; 
+    object-fit: contain; /* 改为 contain，防止产品被裁切，对标图1 */
+    padding: 20px;
+    background-color: #fdfdfd;
 }
+
+/* 文字区域：加大字号的关键 */
 .good-info {
-    padding: 15px 10px; /* 增加内边距 */
+    padding: 10px 15px 25px 15px; 
 }
+
+/* 好物标题：对标图1的大字粗体 */
 .good-title {
-    font-size: 1.1rem !important; /* 字体调大 */
-    font-weight: bold;
-    color: var(--card-text-color-main);
-    margin-bottom: 8px;
+    font-size: 1.25rem !important; 
+    font-weight: 700 !important;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
+
+/* 好物描述：调大字号，改用灰黑色增强易读性 */
 .good-desc {
-    font-size: 0.9rem !important; /* 字体调大 */
-    color: var(--card-text-color-tertiary);
-    line-height: 1.5;
+    font-size: 1.0rem !important; 
+    color: #86868b;
+    line-height: 1.6;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* 允许描述多显示一行，防止大字体装不下 */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* 手机端适配：1行1个 */
 @media (max-width: 640px) {
     .goods-grid {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
     }
     .good-image {
-        height: 220px;
+        height: 280px;
     }
 }
 </style>
@@ -72,7 +90,7 @@ url: "/goods/"
         <img src="https://2a.zol-img.com.cn/product/209/814/ceiR0uIWLL1YY.jpg" class="good-image">
         <div class="good-info">
             <div class="good-title">MacBook Air M1</div>
-            <div class="good-desc">备用电脑，MacOS平台当年的尝鲜（2021.12购入）</div>
+            <div class="good-desc">备用电脑，MacOS平台当年的尝鲜，地流泪（2021.12购入）</div>
         </div>
     </div>
     <div class="good-card">
@@ -86,7 +104,7 @@ url: "/goods/"
         <img src="https://2c.zol-img.com.cn/product/225/482/ce0da5Gl4z5Dg.jpg" class="good-image">
         <div class="good-info">
             <div class="good-title">Xiaomi 13</div>
-            <div class="good-desc">备用机，小屏超棒，Leica加持，摄像手机（2024.05购入）</div>
+            <div class="good-desc">摄像手机，小屏超棒，Leica加持（2024.05购入）</div>
         </div>
     </div>
     <div class="good-card">
@@ -104,10 +122,10 @@ url: "/goods/"
         </div>
     </div>
     <div class="good-card">
-        <img src="https://2c.zol-img.com.cn/product/274/226/ceENWHfAvCF6.jpg" class="good-image">
+        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1736648474.3336909.jpg" class="good-image">
         <div class="good-info">
             <div class="good-title">Xiaomi Buds 6</div>
-            <div class="good-desc">很少带耳机，但是还是狠心买了，感知力不强（2026.01购入）</div>
+            <div class="good-desc">很少带耳机，但是还是狠心买了，感知力不强（2026.01）</div>
         </div>
     </div>
     <div class="good-card">
