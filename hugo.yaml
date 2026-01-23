@@ -210,20 +210,6 @@ params:
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
-menu:
-  main:
-    - identifier: archives
-      name: 归档
-      url: /archives/   # 去掉前面的 /page/
-      params:
-        icon: archives
-      weight: 1
-    - identifier: search
-      name: 搜索
-      url: /search/     # 去掉前面的 /page/
-      params:
-        icon: search
-      weight: 2
 
 related:
     includeNewer: true
