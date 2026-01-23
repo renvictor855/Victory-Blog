@@ -7,33 +7,25 @@
         {{ end }}
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
-    
+
     <section class="powerby">
-        {{ with .Site.Params.footer.customText }}
-            {{ . | safeHTML }} <br/>
-        {{ end }}
-
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
-        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
-        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
-
-        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计 由 <b>Victor Rim</b> 进行改进
     </section>
 
-    <section class="totalcount">
+    <section class="total-count">
         {{ $totalWordCount := 0 }}
         {{ range .Site.RegularPages }}
             {{ $totalWordCount = add $totalWordCount .WordCount }}
         {{ end }}
-        共 {{ div $totalWordCount 1000 | printf "%.2fk" }} 字 · 共 {{ len .Site.RegularPages }} 篇文章
+        共 {{ div (float $totalWordCount) 1000 | printf "%.2f" }}k 字 · 共 {{ len .Site.RegularPages }} 篇文章
     </section>
 
     <section class="running-time">
         本站已稳定运行 <span id="runningdays">0</span> 天 <span id="runninghours">0</span> 小时 <span id="runningminutes">0</span> 分 <span id="runningseconds">0</span> 秒
     </section>
 
-    <section class="badges" style="margin-top: 10px;">
+    <section class="badges" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
         <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square" alt="License">
         <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square" alt="Hugo">
         <img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat-square" alt="Vercel">
@@ -42,15 +34,19 @@
         </a>
     </section>
 
-    <div class="footer-bottom" style="margin-top: 10px; display: flex; gap: 10px;">
-        <img src="https://notbyai.fyi/img/Written-By-Human-Not-By-AI-Badge-White.png" alt="not by ai" style="height: 30px;">
-        <a href="https://travellings.link/" target="_blank"><img src="https://www.travellings.cn/assets/w_logo.png" alt="开往" style="height: 30px;"></a>
+    <div class="footer-bottom" style="margin-top: 15px; display: flex; align-items: center; gap: 12px;">
+        <a href="https://notbyai.fyi/" target="_blank">
+            <img src="https://notbyai.fyi/img/Written-By-Human-Not-By-AI-Badge-White.png" alt="not by ai" style="height: 35px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
+        </a>
+        <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener">
+            <img src="https://www.travellings.cn/assets/w_logo.png" alt="开往" style="height: 35px;">
+        </a>
     </div>
 </footer>
 
 <script>
     function updateRunningTime() {
-        let birthDay = new Date('2026-01-22'); // <--- 这里改成你的建站日期！
+        let birthDay = new Date('2026-01-22');
         let now = new Date();
         let duration = now.getTime() - birthDay.getTime();
         
@@ -65,4 +61,5 @@
         document.getElementById('runningseconds').innerHTML = seconds;
     }
     setInterval(updateRunningTime, 1000);
+    updateRunningTime();
 </script>
