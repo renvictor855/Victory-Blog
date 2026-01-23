@@ -1,11 +1,7 @@
 {{- $ThemeVersion := "3.33.0" -}}
 <footer class="site-footer">
     <section class="copyright">
-        &copy; 
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} - 
-        {{ end }}
-        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
+        &copy; 2020 - {{ now.Format "2006" }} Victor Rim
     </section>
 
     <section class="powerby">
@@ -25,21 +21,27 @@
         本站已稳定运行 <span id="runningdays">0</span> 天 <span id="runninghours">0</span> 小时 <span id="runningminutes">0</span> 分 <span id="runningseconds">0</span> 秒
     </section>
 
-    <section class="badges" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square" alt="License">
-        <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square" alt="Hugo">
-        <img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat-square" alt="Vercel">
+    <section class="badges" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square&logo=creativecommons" alt="License">
+        </a>
+        
+        <a href="https://gohugo.io/" target="_blank">
+            <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square&logo=hugo" alt="Hugo">
+        </a>
+
+        <a href="https://vercel.com/" target="_blank">
+            <img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat-square&logo=vercel" alt="Vercel">
+        </a>
+
         <a href="https://icp.gov.moe/?keyword=20268008" target="_blank">
-            <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备20268008号">
+            <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备">
         </a>
     </section>
 
-    <div class="footer-bottom" style="margin-top: 15px; display: flex; align-items: center; gap: 12px;">
+    <div class="footer-bottom" style="margin-top: 15px;">
         <a href="https://notbyai.fyi/" target="_blank">
-            <img src="https://notbyai.fyi/img/Written-By-Human-Not-By-AI-Badge-White.png" alt="not by ai" style="height: 35px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
-        </a>
-        <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener">
-            <img src="https://www.travellings.cn/assets/w_logo.png" alt="开往" style="height: 35px;">
+            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
         </a>
     </div>
 </footer>
@@ -49,12 +51,10 @@
         let birthDay = new Date('2026-01-22');
         let now = new Date();
         let duration = now.getTime() - birthDay.getTime();
-        
         let days = Math.floor(duration / (24 * 3600 * 1000));
         let hours = Math.floor((duration % (24 * 3600 * 1000)) / (3600 * 1000));
         let minutes = Math.floor((duration % (3600 * 1000)) / (60 * 1000));
         let seconds = Math.floor((duration % (60 * 1000)) / 1000);
-        
         document.getElementById('runningdays').innerHTML = days;
         document.getElementById('runninghours').innerHTML = hours;
         document.getElementById('runningminutes').innerHTML = minutes;
