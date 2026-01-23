@@ -74,7 +74,7 @@ comments: false # 是否开启评论
 
 <div style="text-align: center;">
   <a href="https://ibb.co/fVwVxTx3">
-    <img src="https://i.ibb.co/kVCVSPSL/image.jpg" 
+    <img src="https://s3.bmp.ovh/imgs/2026/01/23/f3a8ec6d70830bed.jpg" 
          alt="投喂码" 
          style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;">
   </a>
