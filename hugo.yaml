@@ -20,10 +20,6 @@ services:
     # Change it to your Disqus shortname before using
     disqus:
         shortname: "hugo-theme-stack"
-    # GA Tracking ID
-    umami:
-        websiteID: "081baf2f-14bc-4c0b-bc5d-1304323b0850"
-        host: "https://cloud.umami.is"
 
 pagination:
     pagerSize: 3
@@ -38,6 +34,11 @@ params:
     featuredImageField: image
     rssFullContent: true
     favicon: /favicon.jpg
+
+    analytics:
+      umami:
+        websiteID: "081baf2f-14bc-4c0b-bc5d-1304323b0850"
+        host: "https://cloud.umami.is"
 
     footer:
       since: 2020
