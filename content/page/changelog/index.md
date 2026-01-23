@@ -2,7 +2,6 @@
 title: "更新日志"
 date: 2026-01-23
 description: "Victory Blog 的成长轨迹"
-image: https://pic1.imgdb.cn/item/69733fa5370d83a1e287b7da.png
 # 关键设置：让它在菜单中显示
 menu:
     main: 
