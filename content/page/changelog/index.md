@@ -8,7 +8,7 @@ menu:
     main: 
         weight: -90
         params:
-            icon: history
+            icon: clock
 ---
 
 ## 🚀 更新日志
