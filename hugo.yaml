@@ -236,7 +236,7 @@ menu:
           url: /changelog/  # 对应 content/changelog/ 文件夹
           weight: 2
           params:
-             icon: history
+             icon: clock
 
 related:
     includeNewer: true
