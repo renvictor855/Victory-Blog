@@ -60,19 +60,27 @@ params:
             enabled: true
             local: true
             src: "img/avatar.jpg"
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
-
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
-
+        social:
+            - identifier: github
+              name: GitHub
+              url: https://github.com/renvictor855
+              icon: github # 这里调用的是主题内置的图标库
+            - identifier: twitter
+              name: Twitter
+              url: https://twitter.com/VictorRYQi
+              icon: twitter
+            - identifier: zhihu
+              name: 知乎
+              url: https://www.zhihu.com/people/george-32-10-11
+              icon: zhihu # 如果主题没内置知乎图标，可以自定义 SVG
+            - identifier: email
+              name: Email
+              url: mailto: renvictor855@gmail.com
+              icon: mail
+            - identifier: wechat
+              name: 微信赞赏
+              url: /img/wechat-pay.jpg # 链接到你刚才上传的图片
+              icon: cash # 或者找个钱包、爱心的图标
     article:
         math: false
         toc: true
