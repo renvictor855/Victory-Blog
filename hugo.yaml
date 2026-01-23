@@ -214,18 +214,12 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 menu:
     main:
-        - identifier: about
-          name: 关于
-          url: /about/
-          params:
-          icon: user
-          weight: 1
         - identifier: goods
           name: 好物
           url: /goods/
           params:
-          icon: shopping-cart
-          weight: 2
+          icon: shopping-cart-heart
+          weight: 1
 
 related:
     includeNewer: true
