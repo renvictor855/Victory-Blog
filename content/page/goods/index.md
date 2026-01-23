@@ -2,6 +2,7 @@
 title: "好物清单"
 description: "纯粹分享我的电子个人好物~"
 layout: "page"
+url: "/goods/"
 ---
 
 <div class="goods-grid">
