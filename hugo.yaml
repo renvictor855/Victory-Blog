@@ -64,23 +64,23 @@ params:
             - identifier: github
               name: GitHub
               url: https://github.com/renvictor855
-              icon: github # 这里调用的是主题内置的图标库
+              icon: brand-github # 这里调用的是主题内置的图标库
             - identifier: twitter
-              name: Twitter
+              name: X
               url: https://twitter.com/VictorRYQi
-              icon: twitter
+              icon: brand-twitter
             - identifier: zhihu
-              name: 知乎
+              name: Zhihu
               url: https://www.zhihu.com/people/george-32-10-11
-              icon: zhihu # 如果主题没内置知乎图标，可以自定义 SVG
+              icon: brand-zhihu # 如果主题没内置知乎图标，可以自定义 SVG
             - identifier: email
-              name: Email
-              url: mailto: renvictor855@gmail.com
+              name: mail
+              url: mailto:renvictor855@gmail.com
               icon: mail
             - identifier: wechat
-              name: 微信赞赏
+              name: WeChat Pay
               url: /img/wechat-pay.jpg # 链接到你刚才上传的图片
-              icon: cash # 或者找个钱包、爱心的图标
+              icon: coin # 或者找个钱包、爱心的图标
     article:
         math: false
         toc: true
