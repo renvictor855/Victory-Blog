@@ -20,4 +20,49 @@
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
     </section>
+
+    <section class="totalcount">
+        {{ $totalWordCount := 0 }}
+        {{ range .Site.RegularPages }}
+            {{ $totalWordCount = add $totalWordCount .WordCount }}
+        {{ end }}
+        共 {{ div $totalWordCount 1000 | printf "%.2fk" }} 字 · 共 {{ len .Site.RegularPages }} 篇文章
+    </section>
+
+    <section class="running-time">
+        本站已稳定运行 <span id="runningdays">0</span> 天 <span id="runninghours">0</span> 小时 <span id="runningminutes">0</span> 分 <span id="runningseconds">0</span> 秒
+    </section>
+
+    <section class="badges" style="margin-top: 10px;">
+        <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square" alt="License">
+        <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square" alt="Hugo">
+        <img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat-square" alt="Vercel">
+        <a href="https://icp.gov.moe/?keyword=20268008" target="_blank">
+            <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备20268008号">
+        </a>
+    </section>
+
+    <div class="footer-bottom" style="margin-top: 10px; display: flex; gap: 10px;">
+        <img src="https://notbyai.fyi/img/Written-By-Human-Not-By-AI-Badge-White.png" alt="not by ai" style="height: 30px;">
+        <a href="https://travellings.link/" target="_blank"><img src="https://www.travellings.cn/assets/w_logo.png" alt="开往" style="height: 30px;"></a>
+    </div>
 </footer>
+
+<script>
+    function updateRunningTime() {
+        let birthDay = new Date('2026-01-22'); // <--- 这里改成你的建站日期！
+        let now = new Date();
+        let duration = now.getTime() - birthDay.getTime();
+        
+        let days = Math.floor(duration / (24 * 3600 * 1000));
+        let hours = Math.floor((duration % (24 * 3600 * 1000)) / (3600 * 1000));
+        let minutes = Math.floor((duration % (3600 * 1000)) / (60 * 1000));
+        let seconds = Math.floor((duration % (60 * 1000)) / 1000);
+        
+        document.getElementById('runningdays').innerHTML = days;
+        document.getElementById('runninghours').innerHTML = hours;
+        document.getElementById('runningminutes').innerHTML = minutes;
+        document.getElementById('runningseconds').innerHTML = seconds;
+    }
+    setInterval(updateRunningTime, 1000);
+</script>
