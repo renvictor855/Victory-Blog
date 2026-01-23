@@ -60,27 +60,34 @@ params:
             enabled: true
             local: true
             src: "img/avatar.jpg"
+        sidebar:
+        emoji: 😁
+        subtitle: 胜利博客，奔赴每一场属于自己的胜利✌
+        avatar:
+            enabled: true
+            local: true
+            src: "img/avatar.jpg"
         social:
             - identifier: github
               name: GitHub
               url: https://github.com/renvictor855
-              icon: brand-github # 这里调用的是主题内置的图标库
+              icon: brand-github
             - identifier: twitter
               name: X
               url: https://twitter.com/VictorRYQi
-              icon: brand-twitter
+              icon: brand-x
             - identifier: zhihu
               name: Zhihu
               url: https://www.zhihu.com/people/george-32-10-11
-              icon: brand-zhihu # 如果主题没内置知乎图标，可以自定义 SVG
+              icon: brand-zhihu
             - identifier: email
               name: mail
               url: mailto:renvictor855@gmail.com
               icon: mail
             - identifier: wechat
               name: WeChat Pay
-              url: /img/wechat-pay.jpg # 链接到你刚才上传的图片
-              icon: coin # 或者找个钱包、爱心的图标
+              url: /img/wechat-pay.jpg
+              icon: coin
     article:
         math: false
         toc: true
