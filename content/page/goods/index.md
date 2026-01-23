@@ -69,7 +69,7 @@ url: "/goods/"
   </div>
 
   <div class="good-card">
-    <img src="https://2a.zol-img.com.cn/product/209/814/ceiR0uIWLL1YY.jpg" class="good-image">
+    <img src="https://2e.zol-img.com.cn/product/222/682/cecADmuIHpido.jpg" class="good-image">
     <div class="good-info">
       <b class="good-title">MacBook Air M1</b>
       <span class="good-desc">备用电脑，MacOS 独一份的流畅，当年的白月光。（2021.12购入）</span>
@@ -101,7 +101,7 @@ url: "/goods/"
   </div>
 
   <div class="good-card">
-    <img src="https://www.huaweifans.com.tw/assets/images/wearables/watch-gt4/watch-gt4-color-2.png" class="good-image">
+    <img src="https://2b.zol-img.com.cn/product/256/381/ceB82KHDzso4M.png" class="good-image">
     <div class="good-info">
       <b class="good-title">华为 Watch GT 4</b>
       <span class="good-desc">续航持久，健康监测，颜值担当。（2024.01购入）</span>
