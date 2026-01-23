@@ -1,0 +1,12 @@
+<div class="goods-grid">
+    {{ .Inner }}
+</div>
+<style>
+.goods-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 20px 0; }
+.good-card { background: var(--card-background); border-radius: 12px; border: 1px solid var(--border-color); text-align: center; overflow: hidden; }
+.good-image { width: 100%; height: 140px; object-fit: cover; }
+.good-info { padding: 10px; }
+.good-title { font-weight: bold; font-size: 0.9rem; color: var(--card-text-color-main); }
+.good-desc { font-size: 0.75rem; color: var(--card-text-color-tertiary); }
+@media (max-width: 640px) { .goods-grid { grid-template-columns: 1fr; } }
+</style>
