@@ -21,8 +21,9 @@ services:
     disqus:
         shortname: "hugo-theme-stack"
     # GA Tracking ID
-    googleAnalytics:
-        id:
+    umami:
+        websiteID: "081baf2f-14bc-4c0b-bc5d-1304323b0850"
+        host: "https://cloud.umami.is"
 
 pagination:
     pagerSize: 3
