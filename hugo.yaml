@@ -60,13 +60,6 @@ params:
             enabled: true
             local: true
             src: "img/avatar.jpg"
-        sidebar:
-        emoji: 😁
-        subtitle: 胜利博客，奔赴每一场属于自己的胜利✌
-        avatar:
-            enabled: true
-            local: true
-            src: "img/avatar.jpg"
         social:
             - identifier: github
               name: GitHub
@@ -182,6 +175,7 @@ params:
             id:
     widgets:
         homepage:
+            - type: user
             - type: search
             - type: archives
               params:
