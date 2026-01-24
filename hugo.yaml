@@ -30,9 +30,9 @@ permalinks:
 
 outputs:
     home:
-        - HTML
-        - RSS
-        - JSON  # 这一行是搜索功能的命脉
+      - HTML
+      - RSS
+      - JSON  # 这一行是搜索功能的命脉
 
 params:
     mainSections:
