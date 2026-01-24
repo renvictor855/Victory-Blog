@@ -223,7 +223,7 @@ menu:
           name: X
           url: https://twitter.com/VictorRYQi
           params:
-             icon: brand-x
+             icon: brand-twitter
         - identifier: zhihu
           name: Zhihu
           url: https://www.zhihu.com/people/george-32-10-11
