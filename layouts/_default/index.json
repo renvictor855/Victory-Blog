@@ -1,6 +1,6 @@
 [
     {{- range $index, $page := .Site.RegularPages -}}
-    {{- if $index -}}, {{- end -}}
+    {{- if gt $index 0 -}},{{- end -}}
     {
         "title": {{ $page.Title | jsonify }},
         "date": {{ $page.Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
