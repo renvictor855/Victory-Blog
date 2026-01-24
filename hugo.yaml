@@ -165,7 +165,6 @@ params:
             id:
     widgets:
         homepage:
-            - type: user
             - type: search
             - type: archives
               params:
@@ -220,6 +219,7 @@ menu:
           params:
              icon: shopping-cart-heart
           weight: 1
+
         - identifier: search
           name: 搜索
           url: /search/
