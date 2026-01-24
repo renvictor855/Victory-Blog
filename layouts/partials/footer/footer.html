@@ -21,19 +21,20 @@
         本站已稳定运行 <span id="runningdays">0</span> 天 <span id="runninghours">0</span> 小时 <span id="runningminutes">0</span> 分 <span id="runningseconds">0</span> 秒
     </section>
 
-    <section class="badges" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+    <section class="voyager-info" style="margin-top: 10px; font-size: 1.4rem; opacity: 0.7;">
+        <span id="voyager" style="color: var(--card-text-color-main);">载入旅行者一号距离信息...</span>
+    </section>
+
+    <section class="badges" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
             <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square&logo=creativecommons" alt="License">
         </a>
-        
         <a href="https://gohugo.io/" target="_blank">
             <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square&logo=hugo" alt="Hugo">
         </a>
-
         <a href="https://vercel.com/" target="_blank">
             <img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat-square&logo=vercel" alt="Vercel">
         </a>
-
         <a href="https://icp.gov.moe/?keyword=20268008" target="_blank">
             <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备">
         </a>
@@ -44,22 +45,42 @@
             <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
         </a>
     </div>
-</footer>
 
-<script>
-    function updateRunningTime() {
-        let birthDay = new Date('2026-01-22');
-        let now = new Date();
-        let duration = now.getTime() - birthDay.getTime();
-        let days = Math.floor(duration / (24 * 3600 * 1000));
-        let hours = Math.floor((duration % (24 * 3600 * 1000)) / (3600 * 1000));
-        let minutes = Math.floor((duration % (3600 * 1000)) / (60 * 1000));
-        let seconds = Math.floor((duration % (60 * 1000)) / 1000);
-        document.getElementById('runningdays').innerHTML = days;
-        document.getElementById('runninghours').innerHTML = hours;
-        document.getElementById('runningminutes').innerHTML = minutes;
-        document.getElementById('runningseconds').innerHTML = seconds;
-    }
-    setInterval(updateRunningTime, 1000);
-    updateRunningTime();
-</script>
+    <script>
+        (function() {
+            function updateRunningTime() {
+                let birthDay = new Date('2026-01-22');
+                let now = new Date();
+                let duration = now.getTime() - birthDay.getTime();
+                if (duration < 0) duration = 0;
+                let days = Math.floor(duration / (24 * 3600 * 1000));
+                let hours = Math.floor((duration % (24 * 3600 * 1000)) / (3600 * 1000));
+                let minutes = Math.floor((duration % (3600 * 1000)) / (60 * 1000));
+                let seconds = Math.floor((duration % (60 * 1000)) / 1000);
+                document.getElementById('runningdays').innerText = days;
+                document.getElementById('runninghours').innerText = hours;
+                document.getElementById('runningminutes').innerText = minutes;
+                document.getElementById('runningseconds').innerText = seconds;
+            }
+
+            function updateVoyager() {
+                var now = new Date();
+                var start = new Date("08/01/2022 00:00:00"); 
+                var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); 
+                var unit = (dis / 149600000).toFixed(6);  
+                var element = document.getElementById("voyager");
+                if (element) {
+                    element.innerText = "旅行者 1 号当前距离地球 " + dis.toLocaleString() + " 千米，约为 " + unit + " AU 🚀";
+                }
+            }
+
+            function tick() {
+                updateRunningTime();
+                updateVoyager();
+            }
+
+            tick();
+            setInterval(tick, 250);
+        })();
+    </script>
+</footer>
