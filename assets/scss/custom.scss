@@ -536,66 +536,74 @@ html {
   }
 }
 
-// macOS 风格代码块彻底修复方案
+// macOS 风格红绿灯代码块 - 纯 CSS 修复版
 .article-content {
   .highlight {
-    padding-top: 35px !important; // 增加顶部空间，防止遮挡第一行代码
     position: relative;
-    border-radius: 15px; // 稍微圆润一点，匹配你的卡片风格
+    padding-top: 38px !important; // 为红绿灯留出整齐的顶栏空间
+    border-radius: 16px; 
+    border: 1px solid rgba(0, 0, 0, 0.05); // 淡淡的边框更有质感
+    background-color: var(--pre-background-color) !important;
     overflow: hidden;
 
-    // 用伪元素重新画顶栏
-    &:before {
-      content: '';
+    // 画出红绿灯圆点
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px; // 垂直居中控制
+      left: 15px; // 距离左边距
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ff5f56; // 红
+      // 使用 box-shadow 一次性画出黄和绿，性能最好且最整齐
+      box-shadow: 22px 0 0 #ffbd2e, 44px 0 0 #27c93f; 
+      z-index: 3;
+    }
+
+    // 可选：给顶栏加一个淡淡的底色块
+    &::after {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 32px; // 顶栏高度
-      background: #212121; // 这是一个深色的顶栏底色，看起来更高端
-      background-image: url(/code-header.svg);
-      background-size: 54px; // 调整 svg 图标大小
-      background-repeat: no-repeat;
-      background-position: 10px center; // 圆点位置居中
+      height: 38px;
+      background: rgba(0, 0, 0, 0.03); // 极其淡的灰色顶栏
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       z-index: 1;
     }
 
-    pre {
-      padding: 10px 15px !important; // 调整内部代码的边距
+    &:hover .copyCodeButton {
+      opacity: 1;
     }
   }
 
-  // 修改复制按钮，把它挪到深色顶栏里去
+  // 复制按钮位置修正
   .copyCodeButton {
     position: absolute;
-    top: 4px !important;    // 放在顶栏垂直居中的位置
-    right: 10px !important; // 靠右对齐
-    background: rgba(255, 255, 255, 0.1) !important; // 给按钮加个透明底色
-    color: #fff !important; // 按钮文字设为白色
-    border-radius: 6px;
+    top: 8px !important; 
+    right: 12px !important;
     padding: 2px 8px !important;
     font-size: 1.2rem !important;
-    height: 24px !important;
-    line-height: 24px !important;
-    z-index: 5; // 确保它在最上层
-    opacity: 0.6;
-
-    &:hover {
-      opacity: 1;
-      background: rgba(255, 255, 255, 0.2) !important;
-    }
+    color: var(--body-text-color) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 6px;
+    z-index: 5;
+    opacity: 0.3; // 默认半透明，悬停才亮起
+    transition: opacity 0.3s;
   }
 
-  // 语言标识符（那个 GDSCRIPT3）也挪上去
+  // 语言标识（GDSCRIPT3等）
   .languageCodeButton {
     position: absolute;
-    top: 4px !important;
-    right: 65px !important; // 躲开复制按钮
-    color: #888 !important;
+    top: 8px !important;
+    right: 75px !important; // 避开复制按钮
     font-size: 1.1rem !important;
-    z-index: 5;
-    background: none !important;
+    font-weight: bold;
+    color: #999 !important;
     text-transform: uppercase;
+    z-index: 5;
   }
 }
 
