@@ -28,6 +28,12 @@ permalinks:
     post: /p/:slug/
     page: /:slug/
 
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON  # 这一行是搜索功能的命脉
+
 params:
     mainSections:
         - post
@@ -67,6 +73,8 @@ params:
         math: false
         toc: true
         readingTime: true
+        wordCount: true    # 显示字数统计图标
+        lastmod: true      # 显示最后修改日期图标
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
@@ -212,6 +220,19 @@ menu:
           params:
              icon: shopping-cart-heart
           weight: 1
+        - identifier: search
+          name: 搜索
+          url: /search/
+          params:
+              icon: search
+          weight: 2
+
+        - identifier: archives
+          name: 归档
+          url: /archives/
+          params:
+              icon: archives # 这会显示图 4 中的“∞”图标
+          weight: 3
 
     social:
         - identifier: github
