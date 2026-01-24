@@ -881,32 +881,22 @@ body, .article-content {
 
 @import "links.scss";
 
-/* --- 彻底隐藏暗色模式文字右侧的上下箭头 --- */
+/* --- 彻底隐藏文字右侧的上下箭头 --- */
 #dark-mode-toggle::after {
     display: none !important;
 }
 
-/* --- 强制让图标、文字在同一行对齐 --- */
+/* --- 强制调整布局：图标与文字紧凑对齐 --- */
 #dark-mode-toggle {
     display: flex !important;
     align-items: center !important;
-    gap: 10px;
+    justify-content: flex-start !important; /* 让内容靠左对齐，解决距离太远的问题 */
+    gap: 10px !important;                   /* 调整图标和文字之间的具体距离 */
+    padding: 10px 15px !important;          /* 调整整体内边距，使其更美观 */
     cursor: pointer;
 }
 
-/* 1. 彻底隐藏文字右侧的上下箭头 */
-#dark-mode-toggle::after {
-    display: none !important;
-}
-
-/* 2. 让图标和文字水平对齐 */
-#dark-mode-toggle {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px;
-}
-
-/* 3. 亮色模式显示逻辑：只显示太阳 */
+/* --- 亮色模式显示逻辑：只显示太阳 --- */
 html[data-scheme="light"] .icon-moon,
 html:not([data-scheme="dark"]) .icon-moon {
     display: none !important;
@@ -916,10 +906,16 @@ html:not([data-scheme="dark"]) .icon-sun {
     display: block !important;
 }
 
-/* 4. 暗色模式显示逻辑：只显示月亮 */
+/* --- 暗色模式显示逻辑：只显示月亮 --- */
 html[data-scheme="dark"] .icon-sun {
     display: none !important;
 }
 html[data-scheme="dark"] .icon-moon {
     display: block !important;
+}
+
+/* --- 让图标大小统一且好看 --- */
+#dark-mode-toggle svg {
+    width: 22px !important;
+    height: 22px !important;
 }
