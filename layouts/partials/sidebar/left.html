@@ -90,13 +90,6 @@
                     {{ end }}
                 {{ end }}
 
-                {{ if (default false .Site.Params.colorScheme.toggle) }}
-                    <li id="dark-mode-toggle">
-                        <span class="icon-sun">{{ partial "helper/icon" "sun-high" }}</span>
-                        <span class="icon-moon">{{ partial "helper/icon" "moon-stars" }}</span>
-                        <span>{{ T "darkMode" }}</span>
-                    </li>
-                {{ end }}
             </ol>
         </li>
     </ol>

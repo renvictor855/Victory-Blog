@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>工具 on Victory Blog</title>
+        <link>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</link>
+        <description>Recent content in 工具 on Victory Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Victor Rim</copyright>
+        <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Markdown语法</title>
+        <link>http://localhost:1313/p/markdown%E8%AF%AD%E6%B3%95/</link>
+        <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/markdown%E8%AF%AD%E6%B3%95/</guid>
+        <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/697437960f075.jpg" alt="Featured image of post Markdown语法" /&gt;&lt;p&gt;前言:本语法书全部引用自&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown 教程&lt;/a&gt;，如有侵权，请联系我，谢谢。&lt;/p&gt;
+&lt;p&gt;标题（Heading）:一级标题（# H1），二级标题（## H2），三级标题（### H3）……&lt;/p&gt;
+&lt;p&gt;粗体（Bold）:&lt;code&gt;**bold text**&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;斜体（Italic）:&lt;code&gt;*italicized text*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;引用块（Blockquote）: &lt;code&gt;&amp;gt; blockquote&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;有序列表（Ordered List）:&lt;code&gt;1. First item 2. Second item 3. Third item&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;无序列表（Unordered List）:&lt;code&gt;- First item - Second item - Third item&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;代码（Code）:&lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;分隔线（Horizontal Rule）:&lt;code&gt;---&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;链接（Link）:&lt;code&gt;[title](https://www.example.com)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;图片（Image）:&lt;code&gt;![alt text](image.jpg)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;表格（Table）: | Syntax      | Description |&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;          | ----------- | ----------- |
+          
+          | Header      | Title       |
+          
+          | Paragraph   | Text        |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;代码块（Fenced Code Block）:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;age&amp;#34;: 25
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;脚注（Footnote）:&lt;code&gt;Here&#39;s a sentence with a footnote. [^1]&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;            `[^1]: This is the footnote.`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;标题编号（Heading ID）:&lt;code&gt;### My Great Heading {#custom-id}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;定义列表（Definition List）:&lt;code&gt;term: definition&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除线（Strikethrough）:&lt;code&gt;~~The world is flat.~~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;任务列表（Task List）:- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

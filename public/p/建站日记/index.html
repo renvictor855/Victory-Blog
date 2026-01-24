@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="关于 Victory Blog 建站的记录随笔">
+<title>建站日记</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.0f7abd0d3192651761b436dc99d7ab2284bc8447f3e268b77e2ba04bce5e195a.css"><meta property='og:title' content="建站日记">
+<meta property='og:description' content="关于 Victory Blog 建站的记录随笔">
+<meta property='og:url' content='http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/'>
+<meta property='og:site_name' content='Victory Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='随笔' /><meta property='article:tag' content='Victory Blog' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2026-01-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-22T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.helloimg.com/i/2026/01/24/69741dcd745b8.png' />
+<meta name="twitter:title" content="建站日记">
+<meta name="twitter:description" content="关于 Victory Blog 建站的记录随笔"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.helloimg.com/i/2026/01/24/69741dcd745b8.png' />
+    <link rel="shortcut icon" href="/favicon.jpg" />
+<script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Xalaok/HarmonyOS-Sans-Webfont@main/regular.min.css"
+/>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "light");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_ab86ed1d8728229d.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Victory Blog</a></h1>
+            <h2 class="site-description">胜利博客，奔赴每一场属于自己的胜利✌</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/renvictor855'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:renvictor855@gmail.com'
+                        target="_blank"
+                        title="mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/img/wechat-pay.jpg'
+                        target="_blank"
+                        title="WeChat Pay"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" /><path d="M12 7v10" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/VictorRYQi'
+                        target="_blank"
+                        title="X"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.zhihu.com/people/george-32-10-11'
+                        target="_blank"
+                        title="Zhihu"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-zhihu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 6h6v12h-2l-2 2l-1 -2h-1l0 -12" /><path d="M4 12h6.5" /><path d="M10.5 6h-5" /><path d="M6 4c-.5 2.5 -1.5 3.5 -2.5 4.5" /><path d="M8 6v7c0 4.5 -2 5.5 -4 7" /><path d="M11 18l-3 -5" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                
+                <span>更新日志</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/goods/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M10 17h-4v-14h-2" /><path d="M6 5l14 1l-.717 5.016m-7.783 1.984h-5.5" /><path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296" /></svg>
+                
+                <span>好物</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#wordpressoracle-cloud">WordPress+Oracle Cloud</a></li>
+    <li><a href="#hexogithubcloudflare">Hexo+GitHub+CloudFlare</a></li>
+    <li><a href="#wordpresstencent-cloud">WordPress+Tencent Cloud</a></li>
+    <li><a href="#tencent-cloud的复活">Tencent Cloud的复活</a></li>
+    <li><a href="#hello-hexo-again">Hello Hexo again!</a></li>
+    <li><a href="#hugogithubcloudflare">Hugo+GitHub+CloudFlare</a>
+      <ol>
+        <li><a href="#1月21日开始用hugo建站">1月21日，开始用Hugo建站。</a></li>
+        <li><a href="#1月22日我对博客进行了装修">1月22日，我对博客进行了装修。</a></li>
+        <li><a href="#1月23日我对博客进一步装修">1月23日，我对博客进一步装修</a></li>
+        <li><a href="#后记">后记</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/">
+                
+                    <img src="https://www.helloimg.com/i/2026/01/24/69741dcd745b8.png" loading="lazy" alt="Featured image of post 建站日记" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%AE%80%E4%BB%8B/" >
+                简介
+            </a>
+        
+            <a href="/categories/%E9%9A%8F%E7%AC%94/" >
+                随笔
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/">建站日记</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            关于 Victory Blog 建站的记录随笔
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-22T00:00:00Z'>Jan 22, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="前言">前言
+</h2><p>建立一个属于自己的博客网站一直是我的理想，从最早使用WordPress，到如今使用Hugo，博客这个东西对我有着深深的影响。</p>
+<h2 id="wordpressoracle-cloud">WordPress+Oracle Cloud
+</h2><p>这是我最早的一次尝试，2022年3月，在朋友的帮助下，我第一次有了自己的网站，我把它命名为乔治网（George Website）。</p>
+<p>服务器是当时在Oracle Cloud免费申请的，域名是在freedom（已经停止运营）免费申请的ryqi.ml，当时第一次Ping通ryqi.ml，我是无比的兴奋，WordPress发文章非常容易，它不需要复杂的编程语言，服务器的维护我全交给了我的大神朋友，当时我发了几个比较好的教程类文章，但是在不仅之后，这台免费的服务器到底不运转了，我第一次的博客生涯结束。</p>
+<h2 id="hexogithubcloudflare">Hexo+GitHub+CloudFlare
+</h2><p>我的大神朋友他自己有一个静态博客，紧接着，2022年4月份，他也帮助我建立了一个静态博客，我到现在也十分感谢他。</p>
+<p>Hexo+GitHub+CloudFlare是当时乃至现在最火的个人博客方案，他当时给我采用的也是这套，他帮我安装了butterfly的主题，然后给我完善了主题，网站做得十分精美，依旧叫乔治网（George Website）。</p>
+<p>Hexo有个缺点，就是一切都需要编程，我当时只会一点点Python，主要用是我自己的兴趣，好在Hexo发文章只用Markdown语言，这也是我第一次接触Markdown，我也深深爱上了Markdown，以至于后来我选择笔记软件必须支持Markdown格式。</p>
+<p>紧接着我建立了RYQi GROUP，聘请了我大神朋友当我的顾问，我当时写了几篇商业文章，然后通过Telegram平台传播，不久我们就有生意了，我们卖了一次节点搭建服务（CNY：35元），一个我随手注册的纯数字的Google Account（CNY：40元），还有帮人解决Hexo建站问题（45元），一共在2个月不到的时间赚了120元钱。（我们每个人一半），这也是我第一桶金。</p>
+<p>后来由于网站疏于维护+Freedom不再提供域名，乔治网（George Website）彻底杳无音信……而我们的RYQi GROUP也黄了……</p>
+<h2 id="wordpresstencent-cloud">WordPress+Tencent Cloud
+</h2><p>2023年1月份，我自己花了100余元买了Tencent Cloud一年的服务器和ryqi.xyz这个域名，一切都没问题，就是卡在了备案这一步，我无奈地放弃了，也亏了100多元钱。</p>
+<h2 id="tencent-cloud的复活">Tencent Cloud的复活
+</h2><p>2023年2月份，ChatGPT爆火，我在一个博主学到了调用API和我服务器来做一个智能网友，我用了我一个微信小号和这个服务器做了一个，很慢，但是成功交流过几次，后来疏于维护，也报废了……</p>
+<h2 id="hello-hexo-again">Hello Hexo again!
+</h2><p>今年1月3日，我在观看YouTube时，意外地看到了用Hexo建站的教程，结合我以前的经历，我不到1小时，就建好了并安装了安知鱼主题。我给它取名胜利博客（Victory Blog）</p>
+<p>熟悉的Hexo让我回想起往昔的无数事情。</p>
+<p>我买了ryqi.top这个域名，有意味RYQi GROUP再创辉煌的含义，但其实吧，当时选完全是因为ryqi.top最便宜……</p>
+<p>我用CloudFlare解析了我的域名，把ryqi.top挂在Victory Blog上。</p>
+<p>但是我对博客要求很高，我很喜欢折腾一些插件，但是无奈我的JavaScript水平实在太低，好几次的报错让我陷入了崩溃，我最终放弃了。</p>
+<h2 id="hugogithubcloudflare">Hugo+GitHub+CloudFlare
+</h2><h3 id="1月21日开始用hugo建站">1月21日，开始用Hugo建站。
+</h3><p>我放弃了Hexo久久不能忘怀，我开始在各种平台找平替，好在我找到了Hugo。</p>
+<p>Hugo好在它是Go语言书写相对于我来说还算轻松，毕竟之前在GitHub没少接触，但其实也碰了不少壁垒。</p>
+<p>Hugo的前期比Hexo要麻烦不少，但我还是克服了，我安装了Jimmy设计的Stack主题，虽然说整体还算可以，但不过就是个毛坯房还有些漏水。Stack主题本身Jimmy大神的初衷是好的，支持各种语言，但对我简直了，我只想要它支持zh-cn（简体中文），然后我也在不断地删改，有时因为这个原因，还能整出幽灵文件。。但是我通过看各种博主一一解决了，</p>
+<h3 id="1月22日我对博客进行了装修">1月22日，我对博客进行了装修。
+</h3><div style="text-align: center;">
+  <a href="https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png">
+    <img src="https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png" 
+         alt="装修图" 
+         style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;">
+  </a>
+</div>
+<p>我通过找各种博文，浏览各种网站，安装了不少插件，这个让emoji抖动效果是我在一个博客看到了一个很好的效果，通过在GitHub查阅，最终实现的。</p>
+<p>这天，我发了Victory Blog的第一篇博文：关于。</p>
+<h3 id="1月23日我对博客进一步装修">1月23日，我对博客进一步装修
+</h3><p>我设计了footer：申请了<a class="link" href="https://icp.gov.moe/?keyword=ryqi.top"  target="_blank" rel="noopener"
+    >萌ICP备20268008号</a>的标志，拿到了<a class="link" href="https://notbyai.fyi/"  target="_blank" rel="noopener"
+    >not by ai</a>的标志。</p>
+<p>我设计了好物界面，里面是我现在的8件数码产品，这个界面采用了HTML语言，也是困难重重啊。</p>
+<p>我修复了博客的幽灵文章Bug</p>
+<p>我采用了Umami进行统计</p>
+<h3 id="后记">后记
+</h3><p>随后我将单开一页作为更新日志，然后我将会发布一篇通过Hugo建立个人博客的教程，这篇就是一个随笔，阐释一下我为啥要建站</p>
+<p>看到这里的都是我的朋友，祝你平安幸福，喜乐安康！</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+        
+            <a href="/tags/victory-blog/">Victory Blog</a>
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%85%B3%E4%BA%8E/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://www.helloimg.com/i/2026/01/24/69741d6420ccb.jpg" loading="lazy" data-key="" data-hash="https://www.helloimg.com/i/2026/01/24/69741d6420ccb.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://www.helloimg.com/i/2026/01/24/69741efb655d4.jpg" loading="lazy" data-key="" data-hash="https://www.helloimg.com/i/2026/01/24/69741efb655d4.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">年终总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    
+    <section class="status-line" style="text-align: center; margin-top: 20px; font-size: 1.5rem; color: var(--card-text-color-main);">
+        还在努力更新中！加油，加油啦！
+    </section>
+
+    <section class="victory-motto" style="text-align: center; margin-top: 8px; font-weight: bold; color: var(--accent-color); font-size: 1.6rem;">
+        胜利博客，奔赴每一场属于自己的胜利✌
+    </section>
+
+    <section class="copyright">
+        &copy; 2020 - 2026 Victor Rim
+    </section>
+
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计 由 <b>Victor Rim</b> 进行改进
+    </section>
+
+    <section class="total-count">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        共 6.86k 字 · 共 7 篇文章
+    </section>
+
+    <section class="running-time">
+        本站已稳定运行 <span id="runningdays">0</span> 天 <span id="runninghours">0</span> 小时 <span id="runningminutes">0</span> 分 <span id="runningseconds">0</span> 秒
+    </section>
+
+    <section class="voyager-info" style="margin-top: 10px; font-size: 1.4rem; opacity: 0.7;">
+        <span id="voyager" style="color: var(--card-text-color-main);">载入旅行者一号距离信息...</span>
+    </section>
+
+    <section class="badges" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;">
+        <a href="https://github.com/renvictor855" target="_blank">
+            <img src="https://img.shields.io/badge/Github-Victory--Blog-181717?style=flat-square&logo=github" alt="GitHub">
+        </a>
+        
+        <a href="https://gohugo.io/" target="_blank">
+            <img src="https://img.shields.io/badge/Frame-Hugo-blueviolet?style=flat-square&logo=hugo" alt="Hugo">
+        </a>
+
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=flat-square&logo=creative-commons" alt="License">
+        </a>
+
+        <a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank">
+            <img src="https://img.shields.io/badge/Theme-Stack-0078d4?style=flat-square&logo=github" alt="Stack">
+        </a>
+
+        <a href="https://icp.gov.moe/?keyword=20268008" target="_blank">
+            <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="https://img.shields.io/badge/Analytics-Umami-2dd4bf?style=flat-square&logo=umami" alt="Umami">
+        </a>
+
+        <a href="https://www.cloudflare.com/" target="_blank">
+            <img src="https://img.shields.io/badge/CDN-Cloudflare-f38020?style=flat-square&logo=cloudflare" alt="Cloudflare">
+        </a>
+
+        <a href="https://vercel.com/" target="_blank">
+            <img src="https://img.shields.io/badge/Hosted-Vercel-000000?style=flat-square&logo=vercel" alt="Vercel">
+        </a>
+    </section>
+
+    <div class="footer-bottom" style="margin-top: 15px;">
+        <a href="https://notbyai.fyi/" target="_blank">
+            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
+        </a>
+    </div>
+
+    <script>
+        (function() {
+            function updateRunningTime() {
+                let birthDay = new Date('2026-01-22');
+                let now = new Date();
+                let duration = now.getTime() - birthDay.getTime();
+                if (duration < 0) duration = 0;
+                let days = Math.floor(duration / (24 * 3600 * 1000));
+                let hours = Math.floor((duration % (24 * 3600 * 1000)) / (3600 * 1000));
+                let minutes = Math.floor((duration % (3600 * 1000)) / (60 * 1000));
+                let seconds = Math.floor((duration % (60 * 1000)) / 1000);
+                document.getElementById('runningdays').innerText = days;
+                document.getElementById('runninghours').innerText = hours;
+                document.getElementById('runningminutes').innerText = minutes;
+                document.getElementById('runningseconds').innerText = seconds;
+            }
+
+            function updateVoyager() {
+                var now = new Date();
+                var start = new Date("08/01/2022 00:00:00"); 
+                var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); 
+                var unit = (dis / 149600000).toFixed(6);  
+                var element = document.getElementById("voyager");
+                if (element) {
+                    element.innerText = "旅行者 1 号当前距离地球 " + dis.toLocaleString() + " 千米，约为 " + unit + " 个天文单位 🚀";
+                }
+            }
+
+            function tick() {
+                updateRunningTime();
+                updateVoyager();
+            }
+
+            tick();
+            setInterval(tick, 250);
+        })();
+    </script>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.56dc8665e77f4f75f378d93c66385af547611bbadd1532f2491670ad330d4990.js" defer></script><script type="text/javascript" src="/ts/custom.53add811215acd63de1f643b21474d8051ad03c75ccf856e4b58dcfc0c5ced4c.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
