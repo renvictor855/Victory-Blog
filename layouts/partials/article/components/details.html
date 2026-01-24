@@ -48,6 +48,12 @@
     </footer>
     {{ end }}
 
+    {{ if .Site.Params.article.wordCount }}
+    <section class="article-meta-item">
+        {{ partial "helper/icon" "pencil" }} <span class="article-wordCount">{{ T "article.wordCount" .WordCount }}</span>
+    </section>
+    {{ end }}
+
     {{ if .IsTranslated }}
         <footer class="article-translations">
             {{ partial "helper/icon" "language" }}
