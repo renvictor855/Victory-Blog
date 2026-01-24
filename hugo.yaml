@@ -212,26 +212,47 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 menu:
     main:
-        - identifier: goods
-          name: 好物
-          url: /goods/
+        - identifier: home
+          name: 首页
+          url: /
           params:
-             icon: shopping-cart-heart
+             icon: home
           weight: 1
 
         - identifier: search
           name: 搜索
-          url: /page/search/
+          url: /page/seach/
           params:
-              icon: search
+             icon: search
           weight: 2
-
+        
         - identifier: archives
           name: 归档
           url: /page/archives/
           params:
-              icon: archives # 这会显示图 4 中的“∞”图标
+             icon: archives
           weight: 3
+
+        - identifier: about
+          name: 关于
+          url: /page/about/
+          params:
+             icon: user
+          weight: 4
+
+        - identifier: goods
+          name: 装备
+          url: /page/goods/
+          params:
+             icon: shopping-cart-heart
+          weight: 5
+
+        - identifier: changelog
+          name: 更新日志
+          url: /page/changelog/
+          params:
+              icon: clock
+          weight: 6
 
     social:
         - identifier: github
