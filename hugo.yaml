@@ -228,21 +228,21 @@ menu:
 
         - identifier: about
           name: 关于
-          url: /page/about/
+          url: /about/
           params:
              icon: user
           weight: 3
 
         - identifier: goods
           name: 装备
-          url: /page/goods/
+          url: /goods/
           params:
              icon: shopping-cart-heart
           weight: 4
 
         - identifier: changelog
           name: 更新日志
-          url: /page/changelog/
+          url: /changelog/
           params:
               icon: clock
           weight: 5
