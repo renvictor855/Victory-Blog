@@ -960,3 +960,24 @@ body, .article-content {
 .sidebar footer .social-menu {
     justify-content: center;
 }
+
+/* 菜单列表整体居中 */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 让菜单项在容器中水平居中 */
+    padding-left: 0;     /* 移除默认可能的左缩进 */
+}
+
+/* 单个菜单项内部居中 */
+.menu li a {
+    justify-content: center; /* 让图标和文字在链接容器内居中 */
+    padding: 10px 0;         /* 适当增加上下间距，更美观 */
+    width: 100%;             /* 确保占满宽度以便居中生效 */
+}
+
+/* 移除图标原有的固定右边距，并给图标和文字之间留出间隙 */
+.menu li a svg {
+    margin-right: 12px;      /* 这里可以保留一点点，或者根据喜好调小 */
+    flex-shrink: 0;
+}
