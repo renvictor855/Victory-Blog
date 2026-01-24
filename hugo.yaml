@@ -222,14 +222,14 @@ menu:
 
         - identifier: search
           name: 搜索
-          url: /search/
+          url: /page/search/
           params:
               icon: search
           weight: 2
 
         - identifier: archives
           name: 归档
-          url: /archives/
+          url: /page/archives/
           params:
               icon: archives # 这会显示图 4 中的“∞”图标
           weight: 3
