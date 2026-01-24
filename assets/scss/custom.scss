@@ -961,36 +961,48 @@ body, .article-content {
     justify-content: center;
 }
 
-/* 1. 彻底重置菜单容器，让它变成一个水平居中的容器 */
-.menu {
-    padding: 0;
+/* 1. 侧边栏容器：确保整体以中轴线对齐 */
+.sidebar header, .menu {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 让下面的 li 整体水平居中 */
+    align-items: center; /* 确保所有子项都绕着中轴线站队 */
 }
 
-/* 2. 让每一个菜单项宽度固定，这样它们的图标和文字就会垂直对齐 */
+/* 2. 菜单项：这是实现“紧凑整体且居中”的关键 */
 .menu li {
-    width: 140px;        /* 关键：调整这个宽度，可以整体控制菜单的水平位置 */
     list-style: none;
-    display: flex;       /* 开启 flex 模式 */
-}
-
-/* 3. 恢复图标和文字的大小与间距 */
-.menu li a {
+    width: auto;         /* 撤销之前的固定宽度 */
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* 内部保持左对齐，确保图标和文字挨在一起 */
-    font-size: 1.1rem;           /* 恢复字体大小 */
-    color: var(--body-text-color);
-    padding: 12px 0;
-    width: 100%;
+    justify-content: center; 
+    width: 100%;        /* 占满宽度以便内部居中生效 */
 }
 
-/* 4. 强制图标保持原样，不缩小，并给右边留出固定间距 */
+/* 3. 链接整体：图标和文字在这里“抱团” */
+.menu li a {
+    display: inline-flex; /* 关键：让 a 标签根据内容自适应宽度 */
+    align-items: center;
+    justify-content: flex-start; /* 图标和文字保持紧凑，不分散 */
+    
+    /* 样式微调 */
+    padding: 8px 0;      /* 减小上下内边距，加密菜单间距 */
+    font-size: 1.25rem;  /* 放大字体，让视觉更饱满 */
+    font-weight: 500;    /* 稍微加粗，更有质感 */
+    color: var(--body-text-color);
+    
+    /* 设定一个最小宽度，保证整体在视觉上以中轴线为核心左右对称 */
+    min-width: 120px;    
+}
+
+/* 4. 图标：保持原样，紧贴文字 */
 .menu li a svg {
-    width: 24px !important;  /* 强制图标大小 */
-    height: 24px !important;
-    margin-right: 15px !important; /* 图标和文字的亲密距离 */
-    flex-shrink: 0;          /* 防止图标被挤压 */
+    width: 26px !important;  /* 放大图标以匹配字体 */
+    height: 26px !important;
+    margin-right: 12px !important; /* 图标和文字的亲密距离 */
+    flex-shrink: 0;
+}
+
+/* 5. 社交图标栏也同步居中 */
+.sidebar footer .social-menu {
+    justify-content: center;
+    padding: 15px 0;
 }
