@@ -176,32 +176,32 @@ a {
   &.extended {
     @include respond(md) {
       max-width: 1024px;
-      --left-sidebar-max-width: 25%;
+      --left-sidebar-max-width: 18%;
       --right-sidebar-max-width: 22% !important;
     }
 
     @include respond(lg) {
       max-width: 1280px;
-      --left-sidebar-max-width: 20%;
+      --left-sidebar-max-width: 15%;
       --right-sidebar-max-width: 30%;
     }
 
     @include respond(xl) {
       max-width: 1453px; //1536px;
-      --left-sidebar-max-width: 15%;
+      --left-sidebar-max-width: 12%;
       --right-sidebar-max-width: 25%;
     }
   }
 
   &.compact {
     @include respond(md) {
-      --left-sidebar-max-width: 25%;
+      --left-sidebar-max-width: 18%;
       max-width: 768px;
     }
 
     @include respond(lg) {
       max-width: 1024px;
-      --left-sidebar-max-width: 20%;
+      --left-sidebar-max-width: 15%;
     }
 
     @include respond(xl) {
@@ -880,34 +880,3 @@ body, .article-content {
     }
 
 @import "links.scss";
-
-/* --- 调整左侧边栏宽度 --- */
-:root {
-    /* 主题默认通常是 30% 或 300px 左右，我们把它改小 */
-    --sidebar-width: 240px; 
-}
-
-/* 适配大屏幕：如果屏幕非常宽，强制限制侧边栏不宜过大 */
-@media (min-width: 1280px) {
-    :root {
-        --sidebar-width: 260px;
-    }
-}
-
-/* 适配中等屏幕（平板等） */
-@media (min-width: 768px) and (max-width: 1024px) {
-    :root {
-        --sidebar-width: 220px;
-    }
-}
-
-/* 微调头像大小，让它在窄边栏里更协调 */
-.sidebar header .avatar img {
-    width: 100px !important; /* 原来可能是 120px 或更大 */
-    height: 100px !important;
-}
-
-/* 微调侧边栏文字大小和间距，防止窄了以后文字换行太丑 */
-.menu li span {
-    font-size: 1.5rem !important; /* 稍微调小一点点 */
-}
