@@ -2,6 +2,7 @@
 title: "Markdown语法"
 description: "Markdown的语法书"
 date: 2026-01-24
+location: "中国大陆"
 image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
 categories:
     - 工具

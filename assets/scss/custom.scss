@@ -905,3 +905,21 @@ body, .article-content {
     }
 
 @import "links.scss";
+
+// 优化文章头部的图标和文字间距
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; // 各个项目之间的间距
+
+    .article-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 5px; // 图标和文字的间距
+        
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

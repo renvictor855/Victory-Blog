@@ -1,7 +1,6 @@
 ---
 title: "关于"
 description: "👋 Hello，我是Victor Rim"
-date: 2026-01-22
 aliases:
     - about-us
     - about-me
