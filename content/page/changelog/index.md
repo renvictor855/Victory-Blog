@@ -3,11 +3,6 @@ title: "更新日志"
 date: 2026-01-24
 description: "Victory Blog 的成长轨迹"
 # 关键设置：让它在菜单中显示
-menu:
-    main: 
-        weight: -90
-        params:
-            icon: clock
 ---
 
 ## 🚀 更新日志
