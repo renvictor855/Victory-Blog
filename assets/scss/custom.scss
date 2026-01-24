@@ -934,3 +934,29 @@ body, .article-content {
     border-radius: 15px;
     padding: 20px;
 }
+
+/* 侧边栏整体居中处理 */
+.sidebar header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 核心：让子元素水平居中 */
+    text-align: center;   /* 核心：让文字居中 */
+}
+
+/* 头像外层容器居中 */
+.sidebar header .site-avatar {
+    margin-right: 0;      /* 去掉默认的右边距 */
+    margin-bottom: 1rem;  /* 增加下方间距，美观一点 */
+}
+
+/* 站名和简介居中 */
+.sidebar header .site-name, 
+.sidebar header .site-description {
+    margin-left: 0;       /* 确保没有偏移 */
+    justify-content: center;
+}
+
+/* 社交媒体图标栏居中 */
+.sidebar footer .social-menu {
+    justify-content: center;
+}
