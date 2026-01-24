@@ -12,7 +12,7 @@
         <h2 class="widget-title section-title" style="margin: 0;">创作热力图</h2>
     </div>
     
-    <div class="widget-body" style="background: var(--card-background); border-radius: var(--card-border-radius);">
+    <div class="widget-body" style="background: #fff; border-radius: 12px; padding: 5px;">
         <div id="heatmap" style="width: 100%; height: 180px;"></div>
     </div>
 </section>
@@ -25,8 +25,7 @@
         var myChart = echarts.init(chartDom);
         
         var dataMap = new Map();
-        
-        // 这一块是报错重灾区，我把 Hugo 循环写得更简洁些
+        // 这里的 range 逻辑是核心，VS Code 报错请忽略
         {{ range (where .Context.Site.RegularPages "Type" "post") }}
             (function() {
                 var k = {{ .Date.Format "2006-01-02" }};
@@ -52,30 +51,33 @@
 
         var option = {
             tooltip: {
-                padding: 10,
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
                 formatter: function (p) {
                     var date = p.data[0];
                     var posts = dataMap.get(date);
-                    var content = '<span style="color: #666; font-weight:bold;">' + date + '</span>';
+                    var content = date;
                     posts.forEach(function(post) {
-                        content += '<br><span style="color: #333;">' + post.title + '</span> <span style="color: #7AA874;">(' + (post.wordCount / 1000).toFixed(1) + 'k)</span>';
+                        content += '<br>' + post.title + ' (' + (post.wordCount / 1000).toFixed(1) + 'k)';
                     });
                     return content;
                 }
             },
             visualMap: {
                 min: 0, max: 5, type: 'piecewise', orient: 'horizontal', left: 'center', top: 0,
-                inRange: { color: ['#7aa8744c', '#7AA874'] }, show: false
+                inRange: { color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127'] }, 
+                show: false
             },
             calendar: {
                 top: 30, left: 25, right: 10, bottom: 5,
                 cellSize: ['auto', 12],
                 range: [echarts.format.formatTime('yyyy-MM-dd', startDate), echarts.format.formatTime('yyyy-MM-dd', endDate)],
-                itemStyle: { color: 'var(--main-wrapper-bg)', borderWidth: 2, borderColor: 'var(--card-background)' },
+                itemStyle: { 
+                    color: '#ebedf0', // 默认格子颜色（类似 GitHub）
+                    borderWidth: 2, 
+                    borderColor: '#fff' 
+                },
                 yearLabel: { show: false },
-                dayLabel: { firstDay: 1, nameMap: ['日', '', '二', '', '四', '', '六'], fontSize: 10, color: 'var(--card-text-color-main)' },
-                monthLabel: { fontSize: 10, color: 'var(--card-text-color-main)' },
+                dayLabel: { firstDay: 1, nameMap: ['日', '', '二', '', '四', '', '六'], fontSize: 10 },
+                monthLabel: { nameMap: 'cn', fontSize: 10 },
                 splitLine: { show: false }
             },
             series: { type: 'heatmap', coordinateSystem: 'calendar', data: data }
