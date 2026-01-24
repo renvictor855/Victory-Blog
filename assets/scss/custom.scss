@@ -961,23 +961,32 @@ body, .article-content {
     justify-content: center;
 }
 
-/* 菜单列表整体居中 */
+/* 1. 菜单容器：保持垂直排列，但内部对齐 */
 .menu {
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 让菜单项在容器中水平居中 */
-    padding-left: 0;     /* 移除默认可能的左缩进 */
+    align-items: center; /* 让下面的 li 容器在侧边栏水平居中 */
 }
 
-/* 单个菜单项内部居中 */
+/* 2. 菜单项：这是关键！固定宽度并左对齐 */
+.menu li {
+    width: 120px;       /* 核心：固定一个宽度，确保所有菜单项起点一致 */
+    list-style: none;
+}
+
+/* 3. 链接样式：在固定的宽度内保持左对齐 */
 .menu li a {
-    justify-content: center; /* 让图标和文字在链接容器内居中 */
-    padding: 10px 0;         /* 适当增加上下间距，更美观 */
-    width: 100%;             /* 确保占满宽度以便居中生效 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 图标和文字保持紧凑靠左 */
+    padding: 12px 0;
+    font-size: 1.1rem;
 }
 
-/* 移除图标原有的固定右边距，并给图标和文字之间留出间隙 */
+/* 4. 图标微调：保持与文字的间距 */
 .menu li a svg {
-    margin-right: 12px;      /* 这里可以保留一点点，或者根据喜好调小 */
+    margin-right: 15px;  /* 图标和文字的距离 */
     flex-shrink: 0;
+    width: 22px;         /* 统一图标大小 */
 }
