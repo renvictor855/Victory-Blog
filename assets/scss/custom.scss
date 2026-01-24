@@ -894,22 +894,32 @@ body, .article-content {
     cursor: pointer;
 }
 
-/* --- 亮色模式显示逻辑 --- */
-/* 当网页是亮色时：隐藏月亮，显示太阳 */
-html[data-scheme="light"] .moon-icon,
-html:not([data-scheme="dark"]) .moon-icon {
+/* 1. 彻底隐藏文字右侧的上下箭头 */
+#dark-mode-toggle::after {
     display: none !important;
 }
-html[data-scheme="light"] .sun-icon,
-html:not([data-scheme="dark"]) .sun-icon {
+
+/* 2. 让图标和文字水平对齐 */
+#dark-mode-toggle {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+}
+
+/* 3. 亮色模式显示逻辑：只显示太阳 */
+html[data-scheme="light"] .icon-moon,
+html:not([data-scheme="dark"]) .icon-moon {
+    display: none !important;
+}
+html[data-scheme="light"] .icon-sun,
+html:not([data-scheme="dark"]) .icon-sun {
     display: block !important;
 }
 
-/* --- 暗色模式显示逻辑 --- */
-/* 当网页是暗色时：隐藏太阳，显示月亮 */
-html[data-scheme="dark"] .sun-icon {
+/* 4. 暗色模式显示逻辑：只显示月亮 */
+html[data-scheme="dark"] .icon-sun {
     display: none !important;
 }
-html[data-scheme="dark"] .moon-icon {
+html[data-scheme="dark"] .icon-moon {
     display: block !important;
 }
