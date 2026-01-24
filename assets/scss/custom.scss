@@ -880,3 +880,36 @@ body, .article-content {
     }
 
 @import "links.scss";
+
+/* --- 侧边栏模式切换优化 --- */
+
+/* 1. 彻底隐藏文字右侧的上下箭头 */
+#dark-mode-toggle::after {
+    display: none !important;
+}
+
+/* 2. 亮色模式逻辑：显示太阳，隐藏月亮 */
+html[data-scheme="light"] .moon-icon-wrapper,
+html:not([data-scheme="dark"]) .moon-icon-wrapper {
+    display: none !important;
+}
+html[data-scheme="light"] .sun-icon-wrapper,
+html:not([data-scheme="dark"]) .sun-icon-wrapper {
+    display: block !important;
+}
+
+/* 3. 暗色模式逻辑：显示月亮，隐藏太阳 */
+html[data-scheme="dark"] .sun-icon-wrapper {
+    display: none !important;
+}
+html[data-scheme="dark"] .moon-icon-wrapper {
+    display: block !important;
+}
+
+/* 4. 对齐微调：确保图标和文字水平居中对齐 */
+#dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
