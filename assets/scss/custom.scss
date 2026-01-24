@@ -961,32 +961,36 @@ body, .article-content {
     justify-content: center;
 }
 
-/* 1. 菜单容器：保持垂直排列，但内部对齐 */
+/* 1. 彻底重置菜单容器，让它变成一个水平居中的容器 */
 .menu {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 让下面的 li 容器在侧边栏水平居中 */
+    align-items: center; /* 让下面的 li 整体水平居中 */
 }
 
-/* 2. 菜单项：这是关键！固定宽度并左对齐 */
+/* 2. 让每一个菜单项宽度固定，这样它们的图标和文字就会垂直对齐 */
 .menu li {
-    width: 120px;       /* 核心：固定一个宽度，确保所有菜单项起点一致 */
+    width: 140px;        /* 关键：调整这个宽度，可以整体控制菜单的水平位置 */
     list-style: none;
+    display: flex;       /* 开启 flex 模式 */
 }
 
-/* 3. 链接样式：在固定的宽度内保持左对齐 */
+/* 3. 恢复图标和文字的大小与间距 */
 .menu li a {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* 图标和文字保持紧凑靠左 */
+    justify-content: flex-start; /* 内部保持左对齐，确保图标和文字挨在一起 */
+    font-size: 1.1rem;           /* 恢复字体大小 */
+    color: var(--body-text-color);
     padding: 12px 0;
-    font-size: 1.1rem;
+    width: 100%;
 }
 
-/* 4. 图标微调：保持与文字的间距 */
+/* 4. 强制图标保持原样，不缩小，并给右边留出固定间距 */
 .menu li a svg {
-    margin-right: 15px;  /* 图标和文字的距离 */
-    flex-shrink: 0;
-    width: 22px;         /* 统一图标大小 */
+    width: 24px !important;  /* 强制图标大小 */
+    height: 24px !important;
+    margin-right: 15px !important; /* 图标和文字的亲密距离 */
+    flex-shrink: 0;          /* 防止图标被挤压 */
 }
