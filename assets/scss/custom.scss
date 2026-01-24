@@ -927,3 +927,10 @@ body, .article-content {
 :root {
     --StackColorScheme: "auto";
 }
+
+.sidebar header {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+}
