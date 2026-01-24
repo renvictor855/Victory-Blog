@@ -1,6 +1,6 @@
 ---
 title: "更新日志"
-date: 2026-01-23
+date: 2026-01-24
 description: "Victory Blog 的成长轨迹"
 # 关键设置：让它在菜单中显示
 menu:
