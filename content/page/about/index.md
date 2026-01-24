@@ -7,7 +7,7 @@ aliases:
 # 这里的布局必须设置为 "about" 或保持默认，Stack 会自动识别
 layout: "about"
 # 如果你想在左侧边栏显示这个页面，请配置 menu
-
+url: "/about/"
 # 下面是页面的正文属性
 comments: false # 是否开启评论
 ---
