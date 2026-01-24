@@ -1,0 +1,86 @@
+<section class="widget heatmap">
+    <div class="widget-icon" style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-stats" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path>
+            <path d="M18 14v4h4"></path>
+            <circle cx="18" cy="18" r="4"></circle>
+            <path d="M15 3v4"></path>
+            <path d="M7 3v4"></path>
+            <path d="M3 11h16"></path>
+        </svg>
+        <h2 class="widget-title section-title" style="margin: 0;">创作热力图</h2>
+    </div>
+    
+    <div class="widget-body" style="background: var(--card-background); border-radius: var(--card-border-radius);">
+        <div id="heatmap" style="width: 100%; height: 180px;"></div>
+    </div>
+</section>
+
+<script src="https://npm.elemecdn.com/echarts@5.3.0/dist/echarts.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        var chartDom = document.getElementById('heatmap');
+        if (!chartDom) return;
+        var myChart = echarts.init(chartDom);
+        
+        var dataMap = new Map();
+        
+        // 这一块是报错重灾区，我把 Hugo 循环写得更简洁些
+        {{ range (where .Context.Site.RegularPages "Type" "post") }}
+            (function() {
+                var k = {{ .Date.Format "2006-01-02" }};
+                var v = { wordCount: {{ .WordCount }}, link: {{ .RelPermalink }}, title: {{ .Title }} };
+                if (!dataMap.has(k)) {
+                    dataMap.set(k, [v]);
+                } else {
+                    dataMap.get(k).push(v);
+                }
+            })();
+        {{ end }}
+
+        var data = [];
+        dataMap.forEach(function(posts, key) {
+            var sum = 0;
+            posts.forEach(function(p) { sum += p.wordCount; });
+            data.push([key, (sum / 1000).toFixed(1)]);
+        });
+
+        var endDate = new Date();
+        var startDate = new Date();
+        startDate.setMonth(startDate.getMonth() - 5); 
+
+        var option = {
+            tooltip: {
+                padding: 10,
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                formatter: function (p) {
+                    var date = p.data[0];
+                    var posts = dataMap.get(date);
+                    var content = '<span style="color: #666; font-weight:bold;">' + date + '</span>';
+                    posts.forEach(function(post) {
+                        content += '<br><span style="color: #333;">' + post.title + '</span> <span style="color: #7AA874;">(' + (post.wordCount / 1000).toFixed(1) + 'k)</span>';
+                    });
+                    return content;
+                }
+            },
+            visualMap: {
+                min: 0, max: 5, type: 'piecewise', orient: 'horizontal', left: 'center', top: 0,
+                inRange: { color: ['#7aa8744c', '#7AA874'] }, show: false
+            },
+            calendar: {
+                top: 30, left: 25, right: 10, bottom: 5,
+                cellSize: ['auto', 12],
+                range: [echarts.format.formatTime('yyyy-MM-dd', startDate), echarts.format.formatTime('yyyy-MM-dd', endDate)],
+                itemStyle: { color: 'var(--main-wrapper-bg)', borderWidth: 2, borderColor: 'var(--card-background)' },
+                yearLabel: { show: false },
+                dayLabel: { firstDay: 1, nameMap: ['日', '', '二', '', '四', '', '六'], fontSize: 10, color: 'var(--card-text-color-main)' },
+                monthLabel: { fontSize: 10, color: 'var(--card-text-color-main)' },
+                splitLine: { show: false }
+            },
+            series: { type: 'heatmap', coordinateSystem: 'calendar', data: data }
+        };
+        myChart.setOption(option);
+        window.addEventListener('resize', function() { myChart.resize(); });
+    })();
+</script>
