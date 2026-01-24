@@ -689,3 +689,8 @@ kbd {
         height: 180px; /* 手机端宽度大，增加图片高度更好看 */
     }
 }
+
+// 字体
+body, .article-content {
+    font-family: "HarmonyOS_Regular", sans-serif;
+}
