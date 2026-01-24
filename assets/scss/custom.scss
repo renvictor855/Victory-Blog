@@ -961,48 +961,50 @@ body, .article-content {
     justify-content: center;
 }
 
-/* 1. 侧边栏容器：确保整体以中轴线对齐 */
-.sidebar header, .menu {
+/* 菜单容器：保持中轴线对齐 */
+.menu {
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 确保所有子项都绕着中轴线站队 */
+    align-items: center; 
 }
 
-/* 2. 菜单项：这是实现“紧凑整体且居中”的关键 */
+/* 菜单项：控制整体宽度，让左右留白更平衡 */
 .menu li {
     list-style: none;
-    width: auto;         /* 撤销之前的固定宽度 */
+    width: 100%;
     display: flex;
-    justify-content: center; 
-    width: 100%;        /* 占满宽度以便内部居中生效 */
+    justify-content: center; /* 确保盒子在中轴线上 */
 }
 
-/* 3. 链接整体：图标和文字在这里“抱团” */
+/* 链接整体：这是调整“图标+文字”亲密度的核心 */
 .menu li a {
-    display: inline-flex; /* 关键：让 a 标签根据内容自适应宽度 */
+    display: inline-flex;
     align-items: center;
-    justify-content: flex-start; /* 图标和文字保持紧凑，不分散 */
+    justify-content: flex-start; /* 内部靠左，保持亲密 */
     
-    /* 样式微调 */
-    padding: 8px 0;      /* 减小上下内边距，加密菜单间距 */
-    font-size: 1.25rem;  /* 放大字体，让视觉更饱满 */
-    font-weight: 500;    /* 稍微加粗，更有质感 */
+    /* --- 核心微调区 --- */
+    gap: 8px;            /* 关键：直接锁定图标和文字的距离，8px 非常紧凑 */
+    padding: 6px 0;      /* 进一步压缩上下行间距，让菜单更精致 */
+    font-size: 1.4rem;   /* 继续加大字号，从 1.25 提到 1.4，视觉更饱满 */
+    font-weight: 600;    /* 稍微加粗，增加辨识度 */
+    /* ---------------- */
+
+    min-width: 140px;    /* 稍微调大最小宽度，让长短不一的文字看起来更稳 */
     color: var(--body-text-color);
-    
-    /* 设定一个最小宽度，保证整体在视觉上以中轴线为核心左右对称 */
-    min-width: 120px;    
+    transition: all 0.3s ease; /* 顺便加个丝滑的过渡动画 */
 }
 
-/* 4. 图标：保持原样，紧贴文字 */
+/* 图标：锁定大小，不再随字体乱变 */
 .menu li a svg {
-    width: 26px !important;  /* 放大图标以匹配字体 */
-    height: 26px !important;
-    margin-right: 12px !important; /* 图标和文字的亲密距离 */
+    width: 28px !important;  /* 配合大字体，图标也同步放大到 28px */
+    height: 28px !important;
     flex-shrink: 0;
+    margin-right: 0 !important; /* 既然用了 gap，就清空 margin */
 }
 
-/* 5. 社交图标栏也同步居中 */
-.sidebar footer .social-menu {
-    justify-content: center;
-    padding: 15px 0;
+/* 悬停效果：既然要美化，加个小细节 */
+.menu li a:hover {
+    color: var(--primary);  /* 鼠标指上去变色 */
+    transform: translateX(5px); /* 轻轻右移，增加交互感 */
 }
