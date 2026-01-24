@@ -2,7 +2,7 @@
 title: "Markdown语法"
 description: "Markdown的语法书"
 date: 2026-01-22
-image: https://www.helloimg.com/i/2026/01/24/69741efb655d4.jpg
+image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
 categories:
     - 工具
 tags:
@@ -38,6 +38,7 @@ tags:
               | Header      | Title       |
               
               | Paragraph   | Text        |
+
 代码块（Fenced Code Block）:
 ```
 {
@@ -46,11 +47,17 @@ tags:
   "age": 25
 }
 ```
+
 脚注（Footnote）:`Here's a sentence with a footnote. [^1]`
+                
                 `[^1]: This is the footnote.`
+
 标题编号（Heading ID）:`### My Great Heading {#custom-id}`
+
 定义列表（Definition List）:`term: definition`
+
 删除线（Strikethrough）:`~~The world is flat.~~`
+
 任务列表（Task List）:- [x] Write the press release
                      - [ ] Update the website
                      - [ ] Contact the media
