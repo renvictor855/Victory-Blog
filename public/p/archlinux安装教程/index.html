@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="本文作者从Windows用户转为尝试Linux，最终选择ArchLinux。文章分享了安装ArchLinux的详细步骤，包括分区、制作启动盘、联网、格式化挂载分区、更换镜像源及安装系统与软件包等过程。">
 <title>ArchLinux安装教程</title>
 
 <link rel='canonical' href='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 
 <link rel="stylesheet" href="/scss/style.min.41142ee01a6feb70a48ccd2683294f3ed92abce8675b15e4321e2c9a69e3f758.css"><meta property='og:title' content="ArchLinux安装教程">
-<meta property='og:description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
+<meta property='og:description' content="本文作者从Windows用户转为尝试Linux，最终选择ArchLinux。文章分享了安装ArchLinux的详细步骤，包括分区、制作启动盘、联网、格式化挂载分区、更换镜像源及安装系统与软件包等过程。">
 <meta property='og:url' content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='Victory Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='随笔' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='教程' /><meta property='article:published_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
 <meta name="twitter:title" content="ArchLinux安装教程">
-<meta name="twitter:description" content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="本文作者从Windows用户转为尝试Linux，最终选择ArchLinux。文章分享了安装ArchLinux的详细步骤，包括分区、制作启动盘、联网、格式化挂载分区、更换镜像源及安装系统与软件包等过程。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
     <link rel="shortcut icon" href="/favicon.jpg" />
 <script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
@@ -45,7 +45,7 @@
         display: inline-block;
         min-height: 1.2em;
     }
-</style>
+</style><link rel="stylesheet" href="https://scdn.星.fun/icp.css">
     </head>
     <body class="
     article-page
@@ -407,6 +407,34 @@
             <a href="/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">ArchLinux安装教程</a>
         </h2>
     
+        
+        <div class="ai-summary-card">
+            <div class="ai-badge">
+                <span class="ai-badge-icon">✨</span>
+                <span class="ai-badge-text">DeepSeek AI 摘要</span>
+            </div>
+            <h3 class="article-subtitle is-typing" id="typed-summary-8a4de725e6b8a5466c4bf2fafa04c745"></h3>
+        </div>
+        
+        <script>
+            (function() {
+                const initTyped = () => {
+                    if (window.Typed) {
+                        new Typed('#typed-summary-8a4de725e6b8a5466c4bf2fafa04c745', {
+                            strings: ["本文作者从Windows用户转为尝试Linux，最终选择ArchLinux。文章分享了安装ArchLinux的详细步骤，包括分区、制作启动盘、联网、格式化挂载分区、更换镜像源及安装系统与软件包等过程。"],
+                            typeSpeed: 45,
+                            startDelay: 600,
+                            showCursor: true,
+                            cursorChar: '_',
+                            loop: false
+                        });
+                    } else {
+                        setTimeout(initTyped, 100);
+                    }
+                };
+                initTyped();
+            })();
+        </script>
         
     </div>
 
@@ -917,6 +945,13 @@
         <a href="https://icp.gov.moe/?keyword=20268008" target="_blank">
             <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备">
         </a>
+
+        <div class="github-badge" style="margin: 0;">
+          <span class="badge-subject">雾备</span>
+          <a style="color:#fff" href="https://icp.wudu.ltd/id.php?keyword=20090604" rel="external" target="_blank">
+            <span class="badge-value bg-cai">20090604号</span>
+          </a>
+        </div>
 
         <a href="#" target="_blank">
             <img src="https://img.shields.io/badge/Analytics-Umami-2dd4bf?style=flat-square&logo=umami" alt="Umami">

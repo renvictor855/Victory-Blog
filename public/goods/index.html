@@ -44,7 +44,7 @@
         display: inline-block;
         min-height: 1.2em;
     }
-</style>
+</style><link rel="stylesheet" href="https://scdn.星.fun/icp.css">
     </head>
     <body class="
     article-page
@@ -321,23 +321,27 @@
         </h2>
     
         
-        <h3 class="article-subtitle is-typing" id="typed-summary-0d3eed8307481e8c3ad49b7585cfa92c"></h3>
+        <div class="ai-summary-card">
+            <div class="ai-badge">
+                <span class="ai-badge-icon">✨</span>
+                <span class="ai-badge-text">DeepSeek AI 摘要</span>
+            </div>
+            <h3 class="article-subtitle is-typing" id="typed-summary-0d3eed8307481e8c3ad49b7585cfa92c"></h3>
+        </div>
         
         <script>
-            
             (function() {
                 const initTyped = () => {
                     if (window.Typed) {
                         new Typed('#typed-summary-0d3eed8307481e8c3ad49b7585cfa92c', {
                             strings: ["纯粹分享我的电子个人好物~"],
-                            typeSpeed: 45,    
-                            startDelay: 300,  
-                            showCursor: true, 
-                            cursorChar: '_',  
-                            loop: false       
+                            typeSpeed: 45,
+                            startDelay: 600,
+                            showCursor: true,
+                            cursorChar: '_',
+                            loop: false
                         });
                     } else {
-                        
                         setTimeout(initTyped, 100);
                     }
                 };
@@ -355,6 +359,62 @@
     
     <style>
          
+        .ai-summary-card {
+            margin: 2rem 0;
+            padding: 1.8rem;  
+            border-radius: 16px;
+             
+            background: rgba(var(--card-background-rgb), 0.5); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(var(--accent-color-rgb), 0.25);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+         
+        .ai-summary-card:hover {
+            transform: translateY(-2px);
+        }
+
+         
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 4px 14px;  
+            border-radius: 30px;
+            font-size: 1.4rem;   
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 3px 8px rgba(var(--accent-color-rgb), 0.3);
+        }
+
+        .ai-badge-icon {
+            font-size: 1.5rem;  
+        }
+
+         
+        .article-subtitle.is-typing {
+            margin: 0 !important;
+            font-size: 1.85rem !important;  
+            line-height: 1.75 !important;    
+            color: var(--card-text-color-main);
+            font-weight: 450;
+            letter-spacing: 0.3px;
+        }
+
+         
+        .typed-cursor {
+            color: var(--accent-color);
+            margin-left: 4px;
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+
+         
         .article-time {
             display: flex;
             flex-direction: row;
@@ -371,12 +431,6 @@
             display: flex;
             align-items: center;
             gap: 6px;
-        }
-
-         
-        .typed-cursor {
-            color: var(--accent-color);
-            margin-left: 3px;
         }
     </style>
     
@@ -661,7 +715,11 @@
         <span id="voyager" style="color: var(--card-text-color-main);">载入旅行者一号距离信息...</span>
     </section>
 
-    <section class="badges" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;">
+    <section class="badges" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+        <a href="https://platform.deepseek.com/" target="_blank">
+           <img src="https://img.shields.io/badge/AI_Summary-DeepSeek-007AFF?style=flat-square&logo=sparkles&logoColor=white" alt="DeepSeek">
+        </a>
+
         <a href="https://github.com/renvictor855" target="_blank">
             <img src="https://img.shields.io/badge/Github-Victory--Blog-181717?style=flat-square&logo=github" alt="GitHub">
         </a>
@@ -682,6 +740,13 @@
             <img src="https://img.shields.io/badge/萌ICP备-20268008-e6007a?style=flat-square" alt="萌ICP备">
         </a>
 
+        <div class="github-badge" style="margin: 0;">
+          <span class="badge-subject">雾备</span>
+          <a style="color:#fff" href="https://icp.wudu.ltd/id.php?keyword=20090604" rel="external" target="_blank">
+            <span class="badge-value bg-cai">20090604号</span>
+          </a>
+        </div>
+
         <a href="#" target="_blank">
             <img src="https://img.shields.io/badge/Analytics-Umami-2dd4bf?style=flat-square&logo=umami" alt="Umami">
         </a>
@@ -695,9 +760,9 @@
         </a>
     </section>
 
-    <div class="footer-bottom" style="margin-top: 15px;">
+    <div class="footer-bottom" style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
         <a href="https://notbyai.fyi/" target="_blank">
-            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
+            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 42px;">
         </a>
     </div>
 
