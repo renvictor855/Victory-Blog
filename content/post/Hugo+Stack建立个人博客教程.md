@@ -5,7 +5,7 @@ date: 2026-01-24
 location: "中国大陆"
 image: https://www.helloimg.com/i/2026/01/24/6974a4a23c638.jpg
 categories:
-    - 教程
+    - 折腾
     - 随笔
 tags:
     - 随笔
