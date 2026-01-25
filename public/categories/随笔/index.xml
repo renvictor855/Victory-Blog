@@ -7,64 +7,184 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Victor Rim</copyright>
-        <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>建站日记</title>
-        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/</link>
-        <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【Hugo博客系列】No.1 搭建Hugo博客，快速简洁高效，零成本搭建个人博客</title>
+        <link>http://localhost:1313/p/hugo%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97no.1-%E6%90%AD%E5%BB%BAhugo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E7%AE%80%E6%B4%81%E9%AB%98%E6%95%88%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/</guid>
-        <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/69741dcd745b8.png" alt="Featured image of post 建站日记" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;建立一个属于自己的博客网站一直是我的理想，从最早使用WordPress，到如今使用Hugo，博客这个东西对我有着深深的影响。&lt;/p&gt;
-&lt;h2 id=&#34;wordpressoracle-cloud&#34;&gt;WordPress+Oracle Cloud
-&lt;/h2&gt;&lt;p&gt;这是我最早的一次尝试，2022年3月，在朋友的帮助下，我第一次有了自己的网站，我把它命名为乔治网（George Website）。&lt;/p&gt;
-&lt;p&gt;服务器是当时在Oracle Cloud免费申请的，域名是在freedom（已经停止运营）免费申请的ryqi.ml，当时第一次Ping通ryqi.ml，我是无比的兴奋，WordPress发文章非常容易，它不需要复杂的编程语言，服务器的维护我全交给了我的大神朋友，当时我发了几个比较好的教程类文章，但是在不仅之后，这台免费的服务器到底不运转了，我第一次的博客生涯结束。&lt;/p&gt;
-&lt;h2 id=&#34;hexogithubcloudflare&#34;&gt;Hexo+GitHub+CloudFlare
-&lt;/h2&gt;&lt;p&gt;我的大神朋友他自己有一个静态博客，紧接着，2022年4月份，他也帮助我建立了一个静态博客，我到现在也十分感谢他。&lt;/p&gt;
-&lt;p&gt;Hexo+GitHub+CloudFlare是当时乃至现在最火的个人博客方案，他当时给我采用的也是这套，他帮我安装了butterfly的主题，然后给我完善了主题，网站做得十分精美，依旧叫乔治网（George Website）。&lt;/p&gt;
-&lt;p&gt;Hexo有个缺点，就是一切都需要编程，我当时只会一点点Python，主要用是我自己的兴趣，好在Hexo发文章只用Markdown语言，这也是我第一次接触Markdown，我也深深爱上了Markdown，以至于后来我选择笔记软件必须支持Markdown格式。&lt;/p&gt;
-&lt;p&gt;紧接着我建立了RYQi GROUP，聘请了我大神朋友当我的顾问，我当时写了几篇商业文章，然后通过Telegram平台传播，不久我们就有生意了，我们卖了一次节点搭建服务（CNY：35元），一个我随手注册的纯数字的Google Account（CNY：40元），还有帮人解决Hexo建站问题（45元），一共在2个月不到的时间赚了120元钱。（我们每个人一半），这也是我第一桶金。&lt;/p&gt;
-&lt;p&gt;后来由于网站疏于维护+Freedom不再提供域名，乔治网（George Website）彻底杳无音信……而我们的RYQi GROUP也黄了……&lt;/p&gt;
-&lt;h2 id=&#34;wordpresstencent-cloud&#34;&gt;WordPress+Tencent Cloud
-&lt;/h2&gt;&lt;p&gt;2023年1月份，我自己花了100余元买了Tencent Cloud一年的服务器和ryqi.xyz这个域名，一切都没问题，就是卡在了备案这一步，我无奈地放弃了，也亏了100多元钱。&lt;/p&gt;
-&lt;h2 id=&#34;tencent-cloud的复活&#34;&gt;Tencent Cloud的复活
-&lt;/h2&gt;&lt;p&gt;2023年2月份，ChatGPT爆火，我在一个博主学到了调用API和我服务器来做一个智能网友，我用了我一个微信小号和这个服务器做了一个，很慢，但是成功交流过几次，后来疏于维护，也报废了……&lt;/p&gt;
-&lt;h2 id=&#34;hello-hexo-again&#34;&gt;Hello Hexo again!
-&lt;/h2&gt;&lt;p&gt;今年1月3日，我在观看YouTube时，意外地看到了用Hexo建站的教程，结合我以前的经历，我不到1小时，就建好了并安装了安知鱼主题。我给它取名胜利博客（Victory Blog）&lt;/p&gt;
-&lt;p&gt;熟悉的Hexo让我回想起往昔的无数事情。&lt;/p&gt;
-&lt;p&gt;我买了ryqi.top这个域名，有意味RYQi GROUP再创辉煌的含义，但其实吧，当时选完全是因为ryqi.top最便宜……&lt;/p&gt;
-&lt;p&gt;我用CloudFlare解析了我的域名，把ryqi.top挂在Victory Blog上。&lt;/p&gt;
-&lt;p&gt;但是我对博客要求很高，我很喜欢折腾一些插件，但是无奈我的JavaScript水平实在太低，好几次的报错让我陷入了崩溃，我最终放弃了。&lt;/p&gt;
-&lt;h2 id=&#34;hugogithubcloudflare&#34;&gt;Hugo+GitHub+CloudFlare
-&lt;/h2&gt;&lt;h3 id=&#34;1月21日开始用hugo建站&#34;&gt;1月21日，开始用Hugo建站。
-&lt;/h3&gt;&lt;p&gt;我放弃了Hexo久久不能忘怀，我开始在各种平台找平替，好在我找到了Hugo。&lt;/p&gt;
-&lt;p&gt;Hugo好在它是Go语言书写相对于我来说还算轻松，毕竟之前在GitHub没少接触，但其实也碰了不少壁垒。&lt;/p&gt;
-&lt;p&gt;Hugo的前期比Hexo要麻烦不少，但我还是克服了，我安装了Jimmy设计的Stack主题，虽然说整体还算可以，但不过就是个毛坯房还有些漏水。Stack主题本身Jimmy大神的初衷是好的，支持各种语言，但对我简直了，我只想要它支持zh-cn（简体中文），然后我也在不断地删改，有时因为这个原因，还能整出幽灵文件。。但是我通过看各种博主一一解决了，&lt;/p&gt;
-&lt;h3 id=&#34;1月22日我对博客进行了装修&#34;&gt;1月22日，我对博客进行了装修。
-&lt;/h3&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;a href=&#34;https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png&#34;&gt;
-    &lt;img src=&#34;https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png&#34; 
-         alt=&#34;装修图&#34; 
-         style=&#34;border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;&#34;&gt;
-  &lt;/a&gt;
+        <guid>http://localhost:1313/p/hugo%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97no.1-%E6%90%AD%E5%BB%BAhugo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E7%AE%80%E6%B4%81%E9%AB%98%E6%95%88%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/6974a4a23c638.jpg" alt="Featured image of post 【Hugo博客系列】No.1 搭建Hugo博客，快速简洁高效，零成本搭建个人博客" /&gt;&lt;h1 id=&#34;搭建hugo博客快速简洁高效零成本搭建个人博客hugo--github-pages--cloudflare-pages-完整指南&#34;&gt;搭建Hugo博客，快速简洁高效，零成本搭建个人博客：Hugo + GitHub Pages + Cloudflare Pages 完整指南
+&lt;/h1&gt;&lt;p&gt;环境准备：安装Go、Git、VS Code&lt;/p&gt;
+&lt;p&gt;配置Git和GitHub：设置SSH密钥，创建GitHub仓库&lt;/p&gt;
+&lt;p&gt;初始化Hugo项目：安装Hugo，创建新博客&lt;/p&gt;
+&lt;p&gt;部署到GitHub Pages：配置部署设置，推送静态文件&lt;/p&gt;
+&lt;p&gt;部署到Cloudflare Pages：连接GitHub仓库，自动部署&lt;/p&gt;
+&lt;p&gt;基本使用方法：创建新文章，本地预览，发布更新&lt;/p&gt;
+&lt;p&gt;这个教程适合那些想要快速搭建个人博客，但又不想花费太多成本的人。通过使用Hugo、GitHub和Cloudflare的免费服务，您可以轻松创建一个高效、简洁的博客网站。&lt;/p&gt;
+&lt;h2 id=&#34;前提&#34;&gt;前提
+&lt;/h2&gt;&lt;p&gt;我的环境参数：&lt;/p&gt;
+&lt;p&gt;Windows 11 25H2 Dev(27975.984)&lt;/p&gt;
+&lt;p&gt;Google Chrome 144&lt;/p&gt;
+&lt;p&gt;Markdown 编辑器：VS Code&lt;/p&gt;
+&lt;p&gt;博客配置编辑器：VS Code&lt;/p&gt;
+&lt;p&gt;命令行工具：Windows Terminal&lt;/p&gt;
+&lt;p&gt;Git 工具：Git Bash&lt;/p&gt;
+&lt;p&gt;Hugo 版本：0.154.5&lt;/p&gt;
+&lt;p&gt;Hugo 主题：Stack 3.27.0&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>ArchLinux安装教程</title>
+        <link>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg" alt="Featured image of post ArchLinux安装教程" /&gt;&lt;p&gt;&lt;em&gt;这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &amp;hellip;我都用过，大多数的感受是微软再也不震撼人心了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;我用过 win11 的泄露版本，当时我还在小学，突然网上流传了泄密的 win11 ，我重装了系统，然而 win11 泄露版并不好用，存在着许多 BUG ，我无奈回到了 win10 ，这期间丢失了许多在 C 盘写的一些随笔，后来我做了 win11 to go 。后来发布的 win11 预览版我并没用，因为 win11 的泄密版对我打击很大，后来，我来到了 win11 正式版。惊喜却少了许多……&lt;/p&gt;
+&lt;p&gt;我有一台 MacBook ，但是我并不满足，我总是渴望着折腾完黑苹果后的那种快感，无奈黑苹果对我来说是不可能的。&lt;/p&gt;
+&lt;p&gt;我是一个编程爱好者，虽然只是爱好者，但喜欢折腾，然后我就盯上了 Linux 。&lt;/p&gt;
+&lt;p&gt;我虽然使用 Linux 的时间不是很长，但我走了很多路，最早的 Cent OS ，然后 Ubuntu ，再然后统信 UOS ，期间安装过虚拟机，也安装过实体机，我还试过 WSL ， Archlinux 是我最后选择的一款系统。&lt;/p&gt;
+&lt;p&gt;Archlinux 是一款不错的系统，就是很难上手。&lt;/p&gt;
+&lt;p&gt;写到这，它更多地不再是一个教程，而是一个随笔。&lt;/p&gt;
+&lt;h2 id=&#34;archlinux-安装指南&#34;&gt;ArchLinux 安装指南
+&lt;/h2&gt;&lt;h3 id=&#34;一分区这一步要在-windows-中进行&#34;&gt;一.分区（这一步要在 Windows 中进行）
+&lt;/h3&gt;&lt;p&gt;我们要准备 Diskgenius 进行分区。&lt;/p&gt;
+&lt;p&gt;首先要准备一个大于 30 GB 的 ROOT 分区，博主用的 50 GB ，如果你是 Linux 专业人员，酌情考虑。&lt;/p&gt;
+&lt;p&gt;其次我们还需要一个 6GB 左右的 SWAP 分区。&lt;/p&gt;
+&lt;p&gt;这些需要在 Windows 下工作， Mac 用户建议不要尝试。&lt;/p&gt;
+&lt;h3 id=&#34;二制作系统u盘&#34;&gt;二.制作系统u盘
+&lt;/h3&gt;&lt;p&gt;这个和做winpe有点像。&lt;/p&gt;
+&lt;p&gt;1.首先进入&lt;a class=&#34;link&#34; href=&#34;http://archlinux.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ArchLinux官网&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+。&lt;/p&gt;
+&lt;p&gt;2.右上角 “Download” ， “BitTorrent Download (recommended)” ， “Torrent for 2020.04.01” （数字为当前版本号），下载了种子文件后，可以用迅雷、 bitcomet 、 qbittorrent 、 FDM 等工具下载。&lt;/p&gt;
+&lt;p&gt;3.到&lt;a class=&#34;link&#34; href=&#34;rufus.ie&#34; &gt;rufus官网&lt;/a&gt;
+
+下载rufus，这是写入镜像工具。&lt;/p&gt;
+&lt;p&gt;4.在大大的 “Download” 下边找到并点击 “Rufus 3.9 Portable” （数字为版本号），下载。双击运行，点“选择”，找到之前下载的 ArchLinux 的ISO文件，开始以ISO文件写入。&lt;/p&gt;
+&lt;h3 id=&#34;三正式安装&#34;&gt;三.正式安装
+&lt;/h3&gt;&lt;p&gt;首先进入bois更改启动项（请您百度自行查询）。&lt;/p&gt;
+&lt;h4 id=&#34;0如果您的键盘不好使解决办法&#34;&gt;0.如果您的键盘不好使，解决办法
+&lt;/h4&gt;&lt;p&gt;每次引导到 Linux 前，请在 GRUB 界面按 “e” ，找到 “linux” ，在句末添加 &lt;code&gt;i8042.dumbkbd&lt;/code&gt; 。&lt;/p&gt;
+&lt;h4 id=&#34;1联网&#34;&gt;1.联网
+&lt;/h4&gt;&lt;h5 id=&#34;1有线连接者输入ip-a即可联网&#34;&gt;（1）有线连接者输入ip a即可联网
+&lt;/h5&gt;&lt;h5 id=&#34;2如果您需要无线连接请执行以下命令&#34;&gt;（2）如果您需要无线连接，请执行以下命令
+&lt;/h5&gt;&lt;p&gt;a.输入&lt;code&gt;iwctl&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;b.进入 iwd 模式后，输入&lt;code&gt;device list&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;c.查看您的网卡名字，一般情况是 wlan0 ，那么输入&lt;code&gt;station wlan0 scan&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;d.检查扫描网络，输入&lt;code&gt;station wlan0 get-networks&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;e.查看您的网络名称,输入&lt;code&gt;station wlan0 connect &amp;quot;您的wlan名称”&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;f.输入您的密码，然后就连上网络了；&lt;/p&gt;
+&lt;p&gt;g.退出 iwd 模式，输入&lt;code&gt;exit&lt;/code&gt;；&lt;/p&gt;
+&lt;h5 id=&#34;3检查网络输入ping-wwwbaiducom如果显示延迟等数据后-ctrl--c-退出&#34;&gt;（3）检查网络，输入&lt;code&gt;ping www.baidu.com&lt;/code&gt;，如果显示延迟等数据后， &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; 退出。
+&lt;/h5&gt;&lt;h4 id=&#34;2更新系统时间&#34;&gt;2.更新系统时间
+&lt;/h4&gt;&lt;p&gt;请输入&lt;code&gt;timedatectl set-ntp true&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3列出磁盘分区表&#34;&gt;3.列出磁盘分区表
+&lt;/h4&gt;&lt;p&gt;（1）请输入&lt;code&gt;fdisk -l&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（2）找到您的 ROOT 分区的设备名 &lt;code&gt;/dev/nvme0n1pX&lt;/code&gt; 和 SWAP 分区的设备名 &lt;code&gt;/dev/nvme0n1pX&lt;/code&gt; 和 EFI 分区的设备名 &lt;code&gt;/dev/nvme0n1p1&lt;/code&gt; （X代表数字）&lt;/p&gt;
+&lt;h4 id=&#34;4格式化分区&#34;&gt;4.格式化分区
+&lt;/h4&gt;&lt;p&gt;（1）输入&lt;code&gt;mkfs.ext4 /dev/root_partition&lt;/code&gt;（ root_partition 指的是根分区例如 nvme0n1p4 ）&lt;/p&gt;
+&lt;p&gt;（2）输入&lt;code&gt;mkswap /dev/swap_partition&lt;/code&gt;（ swap_partiton 指的是交换空间分区）&lt;/p&gt;
+&lt;h4 id=&#34;5挂载分区&#34;&gt;5.挂载分区
+&lt;/h4&gt;&lt;p&gt;（1）输入&lt;code&gt;mount /dev/root_partition /mnt&lt;/code&gt; ( root_partition 指的是根分区例如 nvme0n1p4 )&lt;/p&gt;
+&lt;p&gt;（2）输入&lt;code&gt;mkdir /mnt/boot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（3）输入&lt;code&gt;mkdir /mnt/boot/efi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（4）输入&lt;code&gt;mount /dev/nvme0n1p1 /mnt/boot/efi&lt;/code&gt;（默认 efi 分区是 nvme01p1 )&lt;/p&gt;
+&lt;h4 id=&#34;6更换-pacman-镜像&#34;&gt;6.更换 Pacman 镜像
+&lt;/h4&gt;&lt;p&gt;（0）推荐清华源&lt;/p&gt;
+&lt;p&gt;（1）输入&lt;code&gt;vim /etc/pacman.d/mirrorlist&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（2）按一下i键进入写入模式&lt;/p&gt;
+&lt;p&gt;（3）将白色部分第一行 &lt;code&gt;https://xxx.xxx.xxx.xxx/&lt;/code&gt;部分改为 &lt;code&gt;https://mirrors.tuna.tsinghua.edu.cn/&lt;/code&gt;（这是清华源的改法，其他请自行百度）&lt;/p&gt;
+&lt;p&gt;（4）其他部分不要动！按下 &lt;kbd&gt;ESC&lt;/kbd&gt; + &lt;kbd&gt;w&lt;/kbd&gt; + &lt;kbd&gt;q&lt;/kbd&gt; 退出 VIM&lt;/p&gt;
+&lt;h4 id=&#34;7安装-archlinux-及软件包&#34;&gt;7.安装 ArchLinux 及软件包
+&lt;/h4&gt;&lt;p&gt;请输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;pacstrap&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mnt&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linux&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;firmware&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;devel&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sof&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;firmware&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nano&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vi&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;man&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;db&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;man&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pages&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;texinfo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;networkmanager&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;modemmanager&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;iw&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tools&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dosfstools&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;exfatprogs&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;exfat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;utils&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e2fsprogs&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ntfs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plasma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;kde&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;utilities&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sddm&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grub&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ucode&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;amd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ucode&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;efibootmgr&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xf86&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vulkan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libva&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libvdpau&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;va&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gl&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;compute&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;runtime&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vulkan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;intel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gpu&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tools&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prime&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;settings&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;utils&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;opencl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;utils&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;opencl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nvidia&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libva&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vdpau&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xf86&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;amdgpu&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vulkan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;radeon&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libva&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vdpau&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;opencl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vulkan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;radeon&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lib32&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mesa&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;noto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fonts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cjk&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;noto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fonts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emoji&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prober&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dolphin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;p&gt;我通过找各种博文，浏览各种网站，安装了不少插件，这个让emoji抖动效果是我在一个博客看到了一个很好的效果，通过在GitHub查阅，最终实现的。&lt;/p&gt;
-&lt;p&gt;这天，我发了Victory Blog的第一篇博文：关于。&lt;/p&gt;
-&lt;h3 id=&#34;1月23日我对博客进一步装修&#34;&gt;1月23日，我对博客进一步装修
-&lt;/h3&gt;&lt;p&gt;我设计了footer：申请了&lt;a class=&#34;link&#34; href=&#34;https://icp.gov.moe/?keyword=ryqi.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;萌ICP备20268008号&lt;/a&gt;的标志，拿到了&lt;a class=&#34;link&#34; href=&#34;https://notbyai.fyi/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;not by ai&lt;/a&gt;的标志。&lt;/p&gt;
-&lt;p&gt;我设计了好物界面，里面是我现在的8件数码产品，这个界面采用了HTML语言，也是困难重重啊。&lt;/p&gt;
-&lt;p&gt;我修复了博客的幽灵文章Bug&lt;/p&gt;
-&lt;p&gt;我采用了Umami进行统计&lt;/p&gt;
-&lt;h3 id=&#34;后记&#34;&gt;后记
-&lt;/h3&gt;&lt;p&gt;随后我将单开一页作为更新日志，然后我将会发布一篇通过Hugo建立个人博客的教程，这篇就是一个随笔，阐释一下我为啥要建站&lt;/p&gt;
-&lt;p&gt;看到这里的都是我的朋友，祝你平安幸福，喜乐安康！&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;不要输入错了，这里面包含 ArchLinux 系统、大多数基本包、驱动程序、上网包、字体和 KDE 桌面环境&lt;/p&gt;
+&lt;h4 id=&#34;8生成-fstab&#34;&gt;8.生成 Fstab
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;9-chroot&#34;&gt;9. Chroot
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;arch-chroot /mnt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这将进入新的系统，原先的 /mnt 目录已经成为当前的 /（root）目录&lt;/p&gt;
+&lt;h4 id=&#34;10时区&#34;&gt;10.时区
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime hwclock --systohc&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;11本地化&#34;&gt;11.本地化
+&lt;/h4&gt;&lt;p&gt;vim 编辑&lt;code&gt; /etc/locale.gen&lt;/code&gt;，然后取消掉&lt;code&gt; en_US.UTF-8 UTF-8 和 zh_CN.UTF-8 UTF-8 前的注释（#）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后&lt;code&gt;locale-gen&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后 VIM 创建 &lt;code&gt;locale.conf&lt;/code&gt; 文件，输入&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;并填写&lt;code&gt;LANG=en_US.UTF-8&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;警告： 不要在此设置任何中文 locale，会导致 tty 乱码。&lt;/p&gt;
+&lt;h4 id=&#34;12主机名&#34;&gt;12.主机名
+&lt;/h4&gt;&lt;p&gt;VIM 创建 &lt;code&gt;/etc/hostname&lt;/code&gt; 文件，输入&lt;code&gt;vim /etc/hostname&lt;/code&gt;,填写主机名&lt;/p&gt;
+&lt;h4 id=&#34;13生成初始化内存盘&#34;&gt;13.生成初始化内存盘
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;mkinitcpio -P&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;14设置-root-密码&#34;&gt;14.设置 ROOT 密码
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;passwd&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;15添加用户&#34;&gt;15.添加用户
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;useradd -m -G &amp;quot;wheel&amp;quot; &amp;quot;您的用户名&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;16设置用户密码&#34;&gt;16.设置用户密码
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;passwd 您的用户名&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;17让用户可以使用-sudo&#34;&gt;17.让用户可以使用 sudo
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;vim /etc/sudoers&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;将同时含有&lt;code&gt; wheel 与 nopasswd 的一行取消注释（#）&lt;/code&gt;然后 &lt;kbd&gt;:&lt;/kbd&gt; + &lt;kbd&gt;w&lt;/kbd&gt; + &lt;kbd&gt;q&lt;/kbd&gt; + &lt;kbd&gt;!&lt;/kbd&gt; 保存（这个文件需要添加感叹号以保存）&lt;/p&gt;
+&lt;h4 id=&#34;18安装启动加载程序uefi&#34;&gt;18.安装启动加载程序（UEFI）
+&lt;/h4&gt;&lt;p&gt;输入&lt;code&gt;grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB &amp;amp;&amp;amp; grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;19启用-os-prober修复键盘并生成启动加载配置uefi&#34;&gt;19.启用 OS-Prober、修复键盘并生成启动加载配置（UEFI）
+&lt;/h4&gt;&lt;p&gt;（1）输入&lt;code&gt;vim /etc/default/grub&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（2）找到&lt;code&gt;# GRUB_DISABLE_OS_PROBER=false&lt;/code&gt;行将其取消注释（#）。&lt;/p&gt;
+&lt;p&gt;（3）找到以 quiet 结尾的一行空一格并添加 &lt;code&gt;i8042.dumbkbd&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（4）然后，执行 &lt;code&gt;grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;20重新启动到-bios-来设置启动项目&#34;&gt;20.重新启动到 BIOS 来设置启动项目
+&lt;/h4&gt;&lt;p&gt;重新启动到 BIOS。&lt;/p&gt;
+&lt;p&gt;设置“GRUB”为第一启动项，设置 Windows Boot Manager 为第二启动项，如果没有 GRUB，设置你的硬盘名为第一启动项。（如果您经常使用windows，您可以把Windows Boot Manager设置为第一启动项，但是您要进archlinux需要进入Bois更改）&lt;/p&gt;
+&lt;h4 id=&#34;21启动到新系统并设置服务&#34;&gt;21.启动到新系统并设置服务
+&lt;/h4&gt;&lt;p&gt;重新启动到 GRUB 并选择 Arch Linux。使用 root + 您设定的 root 密码登录到 TTY。登录完成后，执行以下命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;systemctl enable sddm &amp;amp;&amp;amp; systemctl enable NetworkManager &amp;amp;&amp;amp; reboot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这将启用 SDDM 登录管理器和网络组件，如果一切正确，您将在重启后看到 SDDM 登录屏幕&lt;/p&gt;
+&lt;h4 id=&#34;22设置-archlinuxcn-软件包源并安装实用工具&#34;&gt;22.设置 ArchLinuxCN 软件包源并安装实用工具
+&lt;/h4&gt;&lt;p&gt;（1）重新启动到 GRUB 并选择 Arch Linux。您应该看到 SDDM 登录屏幕。&lt;/p&gt;
+&lt;p&gt;（2）使用您自己创建的用户登录到 SDDM。&lt;/p&gt;
+&lt;p&gt;（3）登录到 Plasma 后，在开始菜单中搜索 “Konsole” 来进入 Konsole。&lt;/p&gt;
+&lt;p&gt;（4）输入&lt;code&gt;sudo vim /etc/pacman.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（5）找到 #[custom] 。取消该行以及下面两行（共三行）的注释并将&lt;code&gt;file:///开头的 URL&lt;/code&gt;替换为&lt;code&gt;https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（6）然后按 &lt;kbd&gt;:&lt;/kbd&gt; + &lt;kbd&gt;w&lt;/kbd&gt; + &lt;kbd&gt;q&lt;/kbd&gt; 保存退出。&lt;/p&gt;
+&lt;p&gt;（7）安装 ArchLinuxCN 密钥串：&lt;/p&gt;
+&lt;p&gt;（a）输入&lt;code&gt;sudo pacman -S archlinuxcn-keyring&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（b）安装 YAY ：输入&lt;code&gt;sudo pacman -S yay&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;（8）安装 DEBian To Arch Package ：输入&lt;code&gt;yay -S debtap&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;23到此恭喜您您的archlinux安装完成尽情玩吧&#34;&gt;23.到此，恭喜您，您的archlinux安装完成，尽情玩吧！！！
+&lt;/h4&gt;&lt;h2 id=&#34;后记&#34;&gt;后记
+&lt;/h2&gt;&lt;p&gt;这是我在2022年写的一篇文章，里面的教程仍然可以用，今天写这篇文章也没参考2022年往后的教程了，时间过得真的好快，乔治网（George Website）的文字基本上也灰飞烟灭了，这也是乔治网（George Website）仅剩的遗产了，怀念当初折腾的日子，虽然那时已经知道这么折腾一点用处没有，普通人和Linux几乎无缘。&lt;/p&gt;
+&lt;details&gt;
+    &lt;summary&gt;点这里看隐藏内容！&lt;/summary&gt;
+    看到这里的都是我的朋友，去看看别的文章吧！Have a good day !🥰
+&lt;/details&gt;
 </description>
         </item>
         <item>
         <title>年终总结</title>
         <link>http://localhost:1313/p/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
-        <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/69741efb655d4.jpg" alt="Featured image of post 年终总结" /&gt;&lt;p&gt;是的，这是一篇 2025 的年度总结！本来不打算写了，后来建立了 Victory Blog ，我也就有了写随笔的兴致。&lt;/p&gt;
@@ -228,6 +348,78 @@
 &lt;p&gt;&lt;strong&gt;愿我在新的一年：笔下有前途，眼里有星辰&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客常新，学业长青，不负韶华，在无限的挑战中实现无限的进步&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2026，无限进步~&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>建站日记</title>
+        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/</link>
+        <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/</guid>
+        <description>&lt;img src="https://www.helloimg.com/i/2026/01/24/69741dcd745b8.png" alt="Featured image of post 建站日记" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;建立一个属于自己的博客网站一直是我的理想，从最早使用WordPress，到如今使用Hugo，博客这个东西对我有着深深的影响。&lt;/p&gt;
+&lt;h2 id=&#34;wordpressoracle-cloud&#34;&gt;WordPress+Oracle Cloud
+&lt;/h2&gt;&lt;p&gt;这是我最早的一次尝试，2022年3月，在朋友的帮助下，我第一次有了自己的网站，我把它命名为乔治网（George Website）。&lt;/p&gt;
+&lt;p&gt;服务器是当时在Oracle Cloud免费申请的，域名是在freedom（已经停止运营）免费申请的ryqi.ml，当时第一次Ping通ryqi.ml，我是无比的兴奋，WordPress发文章非常容易，它不需要复杂的编程语言，服务器的维护我全交给了我的大神朋友，当时我发了几个比较好的教程类文章，但是在不仅之后，这台免费的服务器到底不运转了，我第一次的博客生涯结束。&lt;/p&gt;
+&lt;h2 id=&#34;hexogithubcloudflare&#34;&gt;Hexo+GitHub+CloudFlare
+&lt;/h2&gt;&lt;p&gt;我的大神朋友他自己有一个静态博客，紧接着，2022年4月份，他也帮助我建立了一个静态博客，我到现在也十分感谢他。&lt;/p&gt;
+&lt;p&gt;Hexo+GitHub+CloudFlare是当时乃至现在最火的个人博客方案，他当时给我采用的也是这套，他帮我安装了butterfly的主题，然后给我完善了主题，网站做得十分精美，依旧叫乔治网（George Website）。&lt;/p&gt;
+&lt;p&gt;Hexo有个缺点，就是一切都需要编程，我当时只会一点点Python，主要用是我自己的兴趣，好在Hexo发文章只用Markdown语言，这也是我第一次接触Markdown，我也深深爱上了Markdown，以至于后来我选择笔记软件必须支持Markdown格式。&lt;/p&gt;
+&lt;p&gt;紧接着我建立了RYQi GROUP，聘请了我大神朋友当我的顾问，我当时写了几篇商业文章，然后通过Telegram平台传播，不久我们就有生意了，我们卖了一次节点搭建服务（CNY：35元），一个我随手注册的纯数字的Google Account（CNY：40元），还有帮人解决Hexo建站问题（45元），一共在2个月不到的时间赚了120元钱。（我们每个人一半），这也是我第一桶金。&lt;/p&gt;
+&lt;p&gt;后来由于网站疏于维护+Freedom不再提供域名，乔治网（George Website）彻底杳无音信……而我们的RYQi GROUP也黄了……&lt;/p&gt;
+&lt;h2 id=&#34;wordpresstencent-cloud&#34;&gt;WordPress+Tencent Cloud
+&lt;/h2&gt;&lt;p&gt;2023年1月份，我自己花了100余元买了Tencent Cloud一年的服务器和ryqi.xyz这个域名，一切都没问题，就是卡在了备案这一步，我无奈地放弃了，也亏了100多元钱。&lt;/p&gt;
+&lt;h2 id=&#34;tencent-cloud的复活&#34;&gt;Tencent Cloud的复活
+&lt;/h2&gt;&lt;p&gt;2023年2月份，ChatGPT爆火，我在一个博主学到了调用API和我服务器来做一个智能网友，我用了我一个微信小号和这个服务器做了一个，很慢，但是成功交流过几次，后来疏于维护，也报废了……&lt;/p&gt;
+&lt;h2 id=&#34;hello-hexo-again&#34;&gt;Hello Hexo again!
+&lt;/h2&gt;&lt;p&gt;今年1月3日，我在观看YouTube时，意外地看到了用Hexo建站的教程，结合我以前的经历，我不到1小时，就建好了并安装了安知鱼主题。我给它取名胜利博客（Victory Blog）&lt;/p&gt;
+&lt;p&gt;熟悉的Hexo让我回想起往昔的无数事情。&lt;/p&gt;
+&lt;p&gt;我买了ryqi.top这个域名，有意味RYQi GROUP再创辉煌的含义，但其实吧，当时选完全是因为ryqi.top最便宜……&lt;/p&gt;
+&lt;p&gt;我用CloudFlare解析了我的域名，把ryqi.top挂在Victory Blog上。&lt;/p&gt;
+&lt;p&gt;但是我对博客要求很高，我很喜欢折腾一些插件，但是无奈我的JavaScript水平实在太低，好几次的报错让我陷入了崩溃，我最终放弃了。&lt;/p&gt;
+&lt;h2 id=&#34;hugogithubcloudflare&#34;&gt;Hugo+GitHub+CloudFlare
+&lt;/h2&gt;&lt;h3 id=&#34;1月21日开始用hugo建站&#34;&gt;1月21日，开始用Hugo建站。
+&lt;/h3&gt;&lt;p&gt;我放弃了Hexo久久不能忘怀，我开始在各种平台找平替，好在我找到了Hugo。&lt;/p&gt;
+&lt;p&gt;Hugo好在它是Go语言书写相对于我来说还算轻松，毕竟之前在GitHub没少接触，但其实也碰了不少壁垒。&lt;/p&gt;
+&lt;p&gt;Hugo的前期比Hexo要麻烦不少，但我还是克服了，我安装了Jimmy设计的Stack主题，虽然说整体还算可以，但不过就是个毛坯房还有些漏水。Stack主题本身Jimmy大神的初衷是好的，支持各种语言，但对我简直了，我只想要它支持zh-cn（简体中文），然后我也在不断地删改，有时因为这个原因，还能整出幽灵文件。。但是我通过看各种博主一一解决了，&lt;/p&gt;
+&lt;h3 id=&#34;1月22日我对博客进行了装修&#34;&gt;1月22日，我对博客进行了装修。
+&lt;/h3&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;a href=&#34;https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png&#34;&gt;
+    &lt;img src=&#34;https://www.helloimg.com/i/2026/01/24/69741eaff2e38.png&#34; 
+         alt=&#34;装修图&#34; 
+         style=&#34;border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;&#34;&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;我通过找各种博文，浏览各种网站，安装了不少插件，这个让emoji抖动效果是我在一个博客看到了一个很好的效果，通过在GitHub查阅，最终实现的。&lt;/p&gt;
+&lt;p&gt;这天，我发了Victory Blog的第一篇博文：关于。&lt;/p&gt;
+&lt;h3 id=&#34;1月23日我对博客进一步装修&#34;&gt;1月23日，我对博客进一步装修
+&lt;/h3&gt;&lt;p&gt;我设计了footer：申请了&lt;a class=&#34;link&#34; href=&#34;https://icp.gov.moe/?keyword=ryqi.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;萌ICP备20268008号&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+的标志，拿到了&lt;a class=&#34;link&#34; href=&#34;https://notbyai.fyi/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;not by ai&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+的标志。&lt;/p&gt;
+&lt;p&gt;我设计了好物界面，里面是我现在的8件数码产品，这个界面采用了HTML语言，也是困难重重啊。&lt;/p&gt;
+&lt;p&gt;我修复了博客的幽灵文章Bug&lt;/p&gt;
+&lt;p&gt;我采用了Umami进行统计&lt;/p&gt;
+&lt;h3 id=&#34;后记&#34;&gt;后记
+&lt;/h3&gt;&lt;p&gt;随后我将单开一页作为更新日志，然后我将会发布一篇通过Hugo建立个人博客的教程，这篇就是一个随笔，阐释一下我为啥要建站&lt;/p&gt;
+&lt;p&gt;看到这里的都是我的朋友，祝你平安幸福，喜乐安康！&lt;/p&gt;
 </description>
         </item>
         

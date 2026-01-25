@@ -22,7 +22,7 @@ services:
         shortname: "hugo-theme-stack"
 
 pagination:
-    pagerSize: 3
+    pagerSize: 8
 
 permalinks:
     post: /p/:slug/

@@ -1,19 +1,92 @@
 {{ define "body-class" }}template-archives{{ end }}
+
 {{ define "main" }}
-    <header>
-        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
-        {{- $terms := $taxonomy.Pages -}}
-        {{ if $terms }}
-        <h2 class="section-title">{{ T "widget.categoriesCloud.title" }}</h2>
-        <div class="subsection-list">
-            <div class="article-list--tile">
-                {{ range $terms }}
-                    {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
+
+<style>
+    /* 1. 容器：不再使用负边距，直接对齐红线 */
+    .category-grid {
+        display: grid;
+        gap: 20px; /* 增加间距，让图片看起来更精致 */
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    /* 电脑端一行四个 */
+    @media (min-width: 768px) {
+        .category-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .category-card {
+        background-size: cover;
+        background-position: center;
+        /* 关键：调整高度，适度减小图片体积，显得不臃肿 */
+        min-height: 140px; 
+        display: flex;
+        align-items: flex-end;
+        padding: 15px 20px; 
+        border-radius: 12px; /* 圆角与下方卡片一致 */
+        position: relative;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow-l1); /* 加入主题自带的轻微阴影 */
+    }
+
+    .category-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-l2);
+    }
+
+    .category-card-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        /* 遮罩优化：只在底部有渐变 */
+        background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+        border-radius: 12px;
+    }
+
+    .category-card-title {
+        color: white;
+        font-weight: 800;
+        font-size: 1.8rem; /* 稍微收敛一点，但在小图里依然很大 */
+        position: relative;
+        z-index: 1;
+        line-height: 1.1;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+</style>
+
+<header>
+    {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+    {{- $terms := $taxonomy.Pages -}}
+    {{ if $terms }}
+    <h2 class="section-title">{{ T "widget.categoriesCloud.title" }}</h2>
+    <div class="category-grid">
+        {{ $orderedNames := slice "生活" "随笔" "折腾" "工具" }}
+
+        {{ range $name := $orderedNames }}
+            {{ range $.Site.Taxonomies.categories }}
+                {{ if eq .Page.Title $name }}
+                    {{ $bg := "" }}
+                    {{ if eq .Page.Title "生活" }}{{ $bg = "/img/life.jpg" }}
+                    {{ else if eq .Page.Title "随笔" }}{{ $bg = "/img/essays.jpg" }}
+                    {{ else if eq .Page.Title "折腾" }}{{ $bg = "/img/hacks.jpg" }}
+                    {{ else if eq .Page.Title "工具" }}{{ $bg = "/img/tools.jpg" }}
+                    {{ else }}{{ $bg = "/img/default.jpg" }}{{ end }}
+
+                    <a href="{{ .Page.RelPermalink }}" class="category-card" style="background-image: url('{{ $bg }}');">
+                        <div class="category-card-overlay"></div>
+                        <span class="category-card-title">{{ .Page.Title }}</span>
+                    </a>
                 {{ end }}
-            </div>
-        </div>
+            {{ end }}
         {{ end }}
-    </header>
+    </div>
+    {{ end }}
+</header>
 
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $filtered := where $pages "Params.hidden" "!=" true }}

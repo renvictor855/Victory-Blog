@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Victor Rim</copyright>
-        <lastBuildDate>Fri, 23 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>更新日志</title>
-        <link>http://localhost:1313/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</link>
-        <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+        <link>http://localhost:1313/changelog/</link>
+        <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid>
+        <guid>http://localhost:1313/changelog/</guid>
         <description>&lt;h2 id=&#34;-更新日志&#34;&gt;🚀 更新日志
 &lt;/h2&gt;&lt;h3 id=&#34;2026-01-21&#34;&gt;2026-01-21:
 &lt;/h3&gt;&lt;p&gt;Victory Blog （胜利博客）正式建设完成，域名 ryqi.top ，采用了 Stack 主题。&lt;/p&gt;
@@ -23,21 +23,31 @@
 &lt;h3 id=&#34;2026-01-22-1&#34;&gt;2026-01-22：
 &lt;/h3&gt;&lt;p&gt;Victory Blog （胜利博客）进行了一些优化，解决了幽灵文章问题，加入了 Umami 统计功能，美化了 Footer （页脚）。&lt;/p&gt;
 &lt;p&gt;申请了&lt;a class=&#34;link&#34; href=&#34;https://icp.gov.moe/?keyword=ryqi.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;萌ICP备20268008号&lt;/a&gt;。&lt;/p&gt;
+    &gt;萌ICP备20268008号&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+。&lt;/p&gt;
 &lt;p&gt;做了“更新日志”和“好物”菜单，发布了《好物清单》《更新日志》《建站日记》文章，更新了《关于》文章。&lt;/p&gt;
 &lt;p&gt;解决了一些已知问题。&lt;/p&gt;
 &lt;h3 id=&#34;2026-01-23&#34;&gt;2026-01-23
 &lt;/h3&gt;&lt;p&gt;Victory Blog （胜利博客）整体转向使用 Hello 图床，解决了图片加载慢的问题。&lt;/p&gt;
-&lt;p&gt;更新校正了《年终总结》文章，发布《更新日志》。&lt;/p&gt;
+&lt;p&gt;删除了深色模式，统一为亮色模式，缩小了left sidebar的大小，在footer中加入了总访问量统计，博客标语，更多的徽章墙和旅行者1号元素，在right sidebar加入了创作热力图。&lt;/p&gt;
+&lt;p&gt;更新校正了《年终总结》文章，发布《更新日志》《Markdown语法书》文章。&lt;/p&gt;
 &lt;p&gt;解决了一些已知问题。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>关于</title>
-        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+        <link>http://localhost:1313/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://localhost:1313/about/</guid>
         <description>&lt;h2 id=&#34;-关于victor-rim&#34;&gt;👨‍💻 关于Victor Rim
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;团队&lt;/strong&gt;：RYQi GROUP&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;爱好&lt;/strong&gt;：摄影、随笔、折腾、羽球&lt;/p&gt;
@@ -59,18 +69,81 @@
 &lt;h2 id=&#34;-关于victory-blog&#34;&gt;🏠 关于Victory Blog
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;博客声明&lt;/strong&gt;：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客框架&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt; 0.154.5&lt;/p&gt;
+    &gt;Hugo&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ 0.154.5&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客主题&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack&lt;/a&gt; 3.30.0&lt;/p&gt;
+    &gt;Stack&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ 3.30.0&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;托管部署&lt;/strong&gt;：源码托管于&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;，网站部署于&lt;a class=&#34;link&#34; href=&#34;https://www.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;CloudFlare&lt;/a&gt;&lt;/p&gt;
+    &gt;GitHub&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+，网站部署于&lt;a class=&#34;link&#34; href=&#34;https://www.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CloudFlare&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;评论系统&lt;/strong&gt;：目前暂无，计划将采用&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Twikoo&lt;/a&gt;,敬请期待~&lt;/p&gt;
+    &gt;Twikoo&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+,敬请期待~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;访问统计&lt;/strong&gt;：采用&lt;a class=&#34;link&#34; href=&#34;https://umami.xalaok.top/share/2ndVFyWbLflp6As3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Umami&lt;/a&gt;&lt;/p&gt;
+    &gt;Umami&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;版权声明&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/p&gt;
+    &gt;CC BY-NC-SA 4.0&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/p&gt;
 &lt;h2 id=&#34;-建站历史&#34;&gt;⏳ 建站历史
 &lt;/h2&gt;&lt;h3 id=&#34;2022-03&#34;&gt;2022-03
 &lt;/h3&gt;&lt;p&gt;Hello World! （采用WordPress+Oracle Cloud）&lt;/p&gt;
@@ -100,6 +173,14 @@
 &lt;p&gt;&lt;strong&gt;知乎名&lt;/strong&gt;：Victor Rim&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Telegram&lt;/strong&gt;:@renvictor855&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>http://localhost:1313/page/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/page/archives/</guid>
+        <description></description>
         </item>
         <item>
         <title>好物清单</title>
@@ -218,6 +299,14 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>http://localhost:1313/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/page/search/</guid>
+        <description></description>
         </item>
         
     </channel>
