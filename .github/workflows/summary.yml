@@ -1,0 +1,40 @@
+name: DeepSeek Auto Summary
+
+on:
+  push:
+    branches: [ main ] # 如果你的主分支叫 master，记得改成 master
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    # 这一步极其重要：赋予 GitHub Action 把生成的摘要写回你仓库的权限
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests python-frontmatter
+
+      - name: Run Summary Script
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python .github/scripts/summarize.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          # 如果没有新摘要生成，git commit 会报错，这里加个 echo 避免任务失败
+          git commit -m "chore: auto generate AI summaries by DeepSeek" || echo "No changes to commit"
+          git push
