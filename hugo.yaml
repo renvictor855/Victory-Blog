@@ -19,7 +19,7 @@ hasCJKLanguage: true
 services:
     # Change it to your Disqus shortname before using
     disqus:
-        shortname: "hugo-theme-stack"
+        shortname: ""
 
 pagination:
     pagerSize: 8
@@ -89,14 +89,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
-
-        disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+        provider: twikoo
 
         utterances:
             repo:
@@ -138,10 +131,10 @@ params:
                 placeholder:
 
         twikoo:
-            envId:
+            envId: 'https://twikoo-azure-one.vercel.app'
             region:
             path:
-            lang:
+            lang: zh-cn
 
         # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
         cactus:
