@@ -34,6 +34,12 @@ outputs:
       - RSS
       - JSON  # 这一行是搜索功能的命脉
 
+taxonomies:
+    category: categories
+    tag: tags
+
+preserveTaxonomyNames: true # 告诉 Hugo 不要自作聪明把你的中文标签转成小写英文
+
 params:
     mainSections:
         - post
