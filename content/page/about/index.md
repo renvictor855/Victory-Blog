@@ -15,13 +15,25 @@ comments: true # 是否开启评论
 ## 👨‍💻 关于Victor Rim
 **简要说明**：2009年出生，吉林人。我不是一个争强好胜的人，但是胜利是我最喜欢的词语之一，我英文本名 George ，也是当初为啥叫乔治网， Victor （初中徐同学的英文名），在我心中这是最好的英文名，所以到高中，我就继承了 Victor 。我是一名中国朝鲜族人，我的姓氏是 임 ，后来以 임 找到了 Rim 这个英文姓氏，只是吧，我朝语水平不佳， 임 作姓氏时有“林”和“任”两种翻译，作林时英文称 Rim ，作任时英文称 Yim ，本来姓任的我糊里糊涂的选择了 Rim 。高中选择理科，但内心最喜欢的仍然是政治学科和历史学科，极度讨厌语文学科，但是却有写随笔的习惯。从 2022 年开始写博客，后来乔治网扔了，就在记事本写一些随笔……
 
+**性格**：情绪及其不稳定，所以有写一些随笔的习惯，就是把心里话说出来， Victory Blog 往后将发布一些可以公开的随笔。 
+
+**MBTI 人格**： ISTJ（物流师）
+
+<div style="text-align: center;">
+  <a href="https://www.helloimg.com/i/2026/01/25/6976119edaf7b.jpg">
+    <img src="https://www.helloimg.com/i/2026/01/25/6976119edaf7b.jpg" 
+         alt="性格" 
+         style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 250px;">
+  </a>
+</div>
+
 **团队**：RYQi GROUP
 
 **爱好**：摄影、随笔、折腾、游泳、羽球
 
-**技能**：精通 Markdown 语言，会一点点 Go 语言、 Python 、 html ，虽然没学过计算机和编程，但喜欢关注互联网上的各种有趣内容，你正在访问的这个博客，便是我根据网上的教程搭建而成
+**技能**：虽然没学过计算机和编程，但喜欢关注互联网上的各种有趣内容，你正在访问的这个博客，便是我根据网上的教程搭建而成， Go 语言和 Python 都会点。
 
-**理想大学**：深圳大学
+**理想大学**：深圳大学（生物专业）、北京化工大学（材料化学专业）
 
 **理想职业**：工程师、材料化学行业、生物制药行业、程序员、~~老师~~
 
@@ -39,6 +51,8 @@ comments: true # 是否开启评论
 **团队人数**：巅峰时期足足有2人，后来吧，Umm，都快黄了，现在仅我1人
 
 **经营情况**：总盈利CNY：120元（2022.04-2023.01），目前重新营业
+
+**目前打算**： RYQi GROUP 不再营业，但是这个称号得留着，还是挺舍不得的
 
 > RYQi GROUP绝对是一只潜力股。
 
@@ -60,16 +74,15 @@ comments: true # 是否开启评论
 **版权声明**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## ⏳ 建站历史
-### 2022-03
-   Hello World! （采用WordPress+Oracle Cloud）
-### 2022-04
-   Hello Hexo! （采用Hexo+GitHub+CloudFlare）
-### 2026-01-03
-   Hello Hexo again! （采用Hexo+GitHub+CloudFlare）
-### 2026-01-17
-   Goodbye Hexo! （由于JavaScript对我实在过于麻烦，放弃使用Hexo）
-### 2026-01-21
-   Hello Hugo！ （采用Hugo+GitHub+CloudFlare）
+**2022-03**：Hello World! （采用WordPress+Oracle Cloud）
+
+**2022-04**：Hello Hexo! （采用Hexo+GitHub+CloudFlare）
+
+**2026-01-03**：Hello Hexo again! （采用Hexo+GitHub+CloudFlare）
+
+**2026-01-17**：Goodbye Hexo! （由于JavaScript对我实在不友好，放弃使用Hexo）
+
+**2026-01-21**：Hello Hugo！ （采用Hugo+GitHub+CloudFlare）
 
 ## 👍 投喂作者
 由于网站建设与维护实属不易，如果您想支持我的博客，可以扫描下方二维码进行投喂，非常感谢您的支持~ 🐨🐨🐨
