@@ -25,8 +25,32 @@
 
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
     {{ $showDate := not .Date.IsZero }}
-    {{ $showFooter := or $showDate $showReadingTime }}
+    {{ $showWordCount := .Site.Params.article.wordCount }}
+    {{ $showFooter := or $showDate $showReadingTime $showWordCount }}
+
     {{ if $showFooter }}
+    <style>
+        /* 针对文章头部的信息行进行横向排列 */
+        .article-time {
+            display: flex;         /* 开启弹性布局 */
+            flex-direction: row;   /* 强制横向 */
+            align-items: center;   /* 垂直居中图标和文字 */
+            flex-wrap: wrap;       /* 手机端自动换行 */
+            gap: 18px;             /* 信息块之间的间距 */
+            margin-top: 10px;      /* 与标题的间距 */
+            color: var(--card-text-color-secondary);
+            font-size: 1.4rem;
+        }
+
+        /* 统一内部 div 和 section 的排版 */
+        .article-time > div, 
+        .article-time > section {
+            display: flex;
+            align-items: center;
+            gap: 6px;              /* 图标与文字的微距 */
+        }
+    </style>
+    
     <footer class="article-time">
         {{ if $showDate }}
             <div>
@@ -45,13 +69,14 @@
                 </time>
             </div>
         {{ end }}
-    </footer>
-    {{ end }}
 
-    {{ if .Site.Params.article.wordCount }}
-    <section class="article-meta-item">
-        {{ partial "helper/icon" "pencil" }} <span class="article-wordCount">{{ T "article.wordCount" .WordCount }}</span>
-    </section>
+        {{ if $showWordCount }}
+            <section class="article-meta-item">
+                {{ partial "helper/icon" "pencil" }} 
+                <span class="article-wordCount">{{ T "article.wordCount" .WordCount }}</span>
+            </section>
+        {{ end }}
+    </footer>
     {{ end }}
 
     {{ if .IsTranslated }}
