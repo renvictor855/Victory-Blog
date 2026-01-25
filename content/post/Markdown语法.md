@@ -1,14 +1,16 @@
 ---
-title: "Markdown语法"
-date: 2026-01-24
-location: "中国大陆"
-image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
 categories:
-    - 工具
+- 工具
+date: 2026-01-24
+description: 本文简要介绍了Markdown常用语法，包括标题、粗体、斜体、引用、列表、代码、链接、图片、表格等基础格式，并提及脚注、定义列表、删除线等扩展功能，内容引用自Markdown教程。
+image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
+location: 中国大陆
 tags:
-    - 工具
-    - Victory Blog
+- 工具
+- Victory Blog
+title: Markdown语法
 ---
+
 前言:本语法书全部引用自[Markdown 教程](https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88)，如有侵权，请联系我，谢谢。
 
 标题（Heading）:一级标题（# H1），二级标题（## H2），三级标题（### H3）……

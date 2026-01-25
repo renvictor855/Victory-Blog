@@ -1,16 +1,18 @@
 ---
-title: "ArchLinux安装教程"
-date: 2026-01-24
-location: "中国大陆"
-image: https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg
 categories:
-    - 随笔
-    - 折腾
+- 随笔
+- 折腾
+date: 2026-01-24
+description: 本文作者从Windows用户转为尝试Linux，最终选择ArchLinux。文章分享了安装ArchLinux的详细步骤，包括分区、制作启动盘、联网、格式化挂载分区、更换镜像源及安装系统与软件包等过程。
+image: https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg
+location: 中国大陆
 tags:
-    - 随笔
-    - Linux
-    - 教程
+- 随笔
+- Linux
+- 教程
+title: ArchLinux安装教程
 ---
+
 *这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog*
 
 ## 前言
