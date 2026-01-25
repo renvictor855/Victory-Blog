@@ -1,6 +1,5 @@
 ---
 title: "ArchLinux安装教程"
-description: "乔治网的遗产，记忆的重拾，随笔+教程"
 date: 2026-01-24
 location: "中国大陆"
 image: https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg

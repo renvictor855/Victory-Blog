@@ -1,7 +1,31 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
 
-<!-- 我的 GitHub 仓库 -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/Xalaok/HarmonyOS-Sans-Webfont@main/regular.min.css"
 />
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<style>
+    /* 打字机光标样式 */
+    .typed-cursor {
+        color: var(--accent-color); /* 自动匹配主题色 */
+        font-size: 1.1em;
+        margin-left: 4px;
+        opacity: 1;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* 修复打字时容器抖动 */
+    .article-description.is-typing {
+        display: inline-block;
+        min-height: 1.2em;
+    }
+</style>

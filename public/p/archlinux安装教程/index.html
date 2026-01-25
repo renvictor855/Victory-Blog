@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="乔治网的遗产，记忆的重拾，随笔+教程">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
 <title>ArchLinux安装教程</title>
 
 <link rel='canonical' href='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 
 <link rel="stylesheet" href="/scss/style.min.41142ee01a6feb70a48ccd2683294f3ed92abce8675b15e4321e2c9a69e3f758.css"><meta property='og:title' content="ArchLinux安装教程">
-<meta property='og:description' content="乔治网的遗产，记忆的重拾，随笔+教程">
+<meta property='og:description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
 <meta property='og:url' content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='Victory Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='随笔' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='教程' /><meta property='article:published_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
 <meta name="twitter:title" content="ArchLinux安装教程">
-<meta name="twitter:description" content="乔治网的遗产，记忆的重拾，随笔+教程"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
     <link rel="shortcut icon" href="/favicon.jpg" />
 <script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
-
 
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/Xalaok/HarmonyOS-Sans-Webfont@main/regular.min.css"
 />
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<style>
+     
+    .typed-cursor {
+        color: var(--accent-color);  
+        font-size: 1.1em;
+        margin-left: 4px;
+        opacity: 1;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+     
+    .article-description.is-typing {
+        display: inline-block;
+        min-height: 1.2em;
+    }
+</style>
     </head>
     <body class="
     article-page
@@ -384,10 +408,6 @@
         </h2>
     
         
-        <h3 class="article-subtitle">
-            乔治网的遗产，记忆的重拾，随笔&#43;教程
-        </h3>
-        
     </div>
 
     
@@ -398,23 +418,78 @@
     
     <style>
          
+        .ai-summary-card {
+            margin: 2rem 0;
+            padding: 1.8rem;  
+            border-radius: 16px;
+             
+            background: rgba(var(--card-background-rgb), 0.5); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(var(--accent-color-rgb), 0.25);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+         
+        .ai-summary-card:hover {
+            transform: translateY(-2px);
+        }
+
+         
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 4px 14px;  
+            border-radius: 30px;
+            font-size: 1.4rem;   
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 3px 8px rgba(var(--accent-color-rgb), 0.3);
+        }
+
+        .ai-badge-icon {
+            font-size: 1.5rem;  
+        }
+
+         
+        .article-subtitle.is-typing {
+            margin: 0 !important;
+            font-size: 1.85rem !important;  
+            line-height: 1.75 !important;    
+            color: var(--card-text-color-main);
+            font-weight: 450;
+            letter-spacing: 0.3px;
+        }
+
+         
+        .typed-cursor {
+            color: var(--accent-color);
+            margin-left: 4px;
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+
+         
         .article-time {
-            display: flex;          
-            flex-direction: row;    
-            align-items: center;    
-            flex-wrap: wrap;        
-            gap: 18px;              
-            margin-top: 10px;       
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 10px;
             color: var(--card-text-color-secondary);
             font-size: 1.4rem;
         }
 
-         
         .article-time > div, 
         .article-time > section {
             display: flex;
             align-items: center;
-            gap: 6px;               
+            gap: 6px;
         }
     </style>
     
@@ -800,7 +875,7 @@
         
             
         
-        共 9.48k 字 · 共 10 篇文章
+        共 9.50k 字 · 共 10 篇文章
     </section>
 
     <section class="total-visits">
@@ -818,7 +893,11 @@
         <span id="voyager" style="color: var(--card-text-color-main);">载入旅行者一号距离信息...</span>
     </section>
 
-    <section class="badges" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;">
+    <section class="badges" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+        <a href="https://platform.deepseek.com/" target="_blank">
+           <img src="https://img.shields.io/badge/AI_Summary-DeepSeek-007AFF?style=flat-square&logo=sparkles&logoColor=white" alt="DeepSeek">
+        </a>
+
         <a href="https://github.com/renvictor855" target="_blank">
             <img src="https://img.shields.io/badge/Github-Victory--Blog-181717?style=flat-square&logo=github" alt="GitHub">
         </a>
@@ -852,9 +931,9 @@
         </a>
     </section>
 
-    <div class="footer-bottom" style="margin-top: 15px;">
+    <div class="footer-bottom" style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
         <a href="https://notbyai.fyi/" target="_blank">
-            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
+            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 42px;">
         </a>
     </div>
 

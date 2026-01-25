@@ -16,11 +16,35 @@
     <link rel="shortcut icon" href="/favicon.jpg" />
 <script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
 
-
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/Xalaok/HarmonyOS-Sans-Webfont@main/regular.min.css"
 />
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<style>
+     
+    .typed-cursor {
+        color: var(--accent-color);  
+        font-size: 1.1em;
+        margin-left: 4px;
+        opacity: 1;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+     
+    .article-description.is-typing {
+        display: inline-block;
+        min-height: 1.2em;
+    }
+</style>
     </head>
     <body class="">
     <script>
@@ -360,7 +384,7 @@
         
             
         
-        共 9.48k 字 · 共 10 篇文章
+        共 9.50k 字 · 共 10 篇文章
     </section>
 
     <section class="total-visits">
@@ -378,7 +402,11 @@
         <span id="voyager" style="color: var(--card-text-color-main);">载入旅行者一号距离信息...</span>
     </section>
 
-    <section class="badges" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;">
+    <section class="badges" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+        <a href="https://platform.deepseek.com/" target="_blank">
+           <img src="https://img.shields.io/badge/AI_Summary-DeepSeek-007AFF?style=flat-square&logo=sparkles&logoColor=white" alt="DeepSeek">
+        </a>
+
         <a href="https://github.com/renvictor855" target="_blank">
             <img src="https://img.shields.io/badge/Github-Victory--Blog-181717?style=flat-square&logo=github" alt="GitHub">
         </a>
@@ -412,9 +440,9 @@
         </a>
     </section>
 
-    <div class="footer-bottom" style="margin-top: 15px;">
+    <div class="footer-bottom" style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
         <a href="https://notbyai.fyi/" target="_blank">
-            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 40px;">
+            <img src="/img/not-by-ai.png" alt="not by ai" style="height: 42px;">
         </a>
     </div>
 

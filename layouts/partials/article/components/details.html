@@ -17,9 +17,33 @@
         </h2>
     
         {{ with .Params.description }}
-        <h3 class="article-subtitle">
-            {{ . }}
-        </h3>
+        <div class="ai-summary-card">
+            <div class="ai-badge">
+                <span class="ai-badge-icon">✨</span>
+                <span class="ai-badge-text">DeepSeek AI 摘要</span>
+            </div>
+            <h3 class="article-subtitle is-typing" id="typed-summary-{{ $.File.UniqueID }}"></h3>
+        </div>
+        
+        <script>
+            (function() {
+                const initTyped = () => {
+                    if (window.Typed) {
+                        new Typed('#typed-summary-{{ $.File.UniqueID }}', {
+                            strings: [{{ . | safeHTML }}],
+                            typeSpeed: 45,
+                            startDelay: 600,
+                            showCursor: true,
+                            cursorChar: '_',
+                            loop: false
+                        });
+                    } else {
+                        setTimeout(initTyped, 100);
+                    }
+                };
+                initTyped();
+            })();
+        </script>
         {{ end }}
     </div>
 
@@ -30,24 +54,79 @@
 
     {{ if $showFooter }}
     <style>
-        /* 针对文章头部的信息行进行横向排列 */
+        /* AI 摘要卡片：增强大字号适配与毛玻璃质感 */
+        .ai-summary-card {
+            margin: 2rem 0;
+            padding: 1.8rem; /* 增加内边距适配大字 */
+            border-radius: 16px;
+            /* 智能毛玻璃：背景更厚实一点点 */
+            background: rgba(var(--card-background-rgb), 0.5); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(var(--accent-color-rgb), 0.25);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        /* 悬停微动 */
+        .ai-summary-card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* AI 标识标签：大号样式 */
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 4px 14px; /* 增大标签 */
+            border-radius: 30px;
+            font-size: 1.4rem;  /* 标签文字调大 */
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 3px 8px rgba(var(--accent-color-rgb), 0.3);
+        }
+
+        .ai-badge-icon {
+            font-size: 1.5rem; /* 图标同步调大 */
+        }
+
+        /* 摘要正文：超大号且清晰 */
+        .article-subtitle.is-typing {
+            margin: 0 !important;
+            font-size: 1.85rem !important; /* 核心文字调大到约 1.85rem */
+            line-height: 1.75 !important;   /* 增加行高防止大字拥挤 */
+            color: var(--card-text-color-main);
+            font-weight: 450;
+            letter-spacing: 0.3px;
+        }
+
+        /* 打字机光标：同步变粗变大 */
+        .typed-cursor {
+            color: var(--accent-color);
+            margin-left: 4px;
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+
+        /* 保留你之前的横向排列样式 */
         .article-time {
-            display: flex;         /* 开启弹性布局 */
-            flex-direction: row;   /* 强制横向 */
-            align-items: center;   /* 垂直居中图标和文字 */
-            flex-wrap: wrap;       /* 手机端自动换行 */
-            gap: 18px;             /* 信息块之间的间距 */
-            margin-top: 10px;      /* 与标题的间距 */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 10px;
             color: var(--card-text-color-secondary);
             font-size: 1.4rem;
         }
 
-        /* 统一内部 div 和 section 的排版 */
         .article-time > div, 
         .article-time > section {
             display: flex;
             align-items: center;
-            gap: 6px;              /* 图标与文字的微距 */
+            gap: 6px;
         }
     </style>
     

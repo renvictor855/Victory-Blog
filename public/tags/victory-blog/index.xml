@@ -95,7 +95,7 @@
 &lt;p&gt;熟悉的Hexo让我回想起往昔的无数事情。&lt;/p&gt;
 &lt;p&gt;我买了ryqi.top这个域名，有意味RYQi GROUP再创辉煌的含义，但其实吧，当时选完全是因为ryqi.top最便宜……&lt;/p&gt;
 &lt;p&gt;我用CloudFlare解析了我的域名，把ryqi.top挂在Victory Blog上。&lt;/p&gt;
-&lt;p&gt;但是我对博客要求很高，我很喜欢折腾一些插件，但是无奈我的JavaScript水平实在太低，好几次的报错让我陷入了崩溃，我最终放弃了。&lt;/p&gt;
+&lt;p&gt;但是我对博客要求很高，我很喜欢折腾一些插件，但是无奈我的JavaScript水平实在太低，好几次的报错让我陷入了崩溃，我最终放弃了（但其实内心并不愿意）。&lt;/p&gt;
 &lt;h2 id=&#34;hugogithubcloudflare&#34;&gt;Hugo+GitHub+CloudFlare
 &lt;/h2&gt;&lt;h3 id=&#34;1月21日开始用hugo建站&#34;&gt;1月21日，开始用Hugo建站。
 &lt;/h3&gt;&lt;p&gt;我放弃了Hexo久久不能忘怀，我开始在各种平台找平替，好在我找到了Hugo。&lt;/p&gt;

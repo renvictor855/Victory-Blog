@@ -1,6 +1,5 @@
 ---
 title: "【Hugo博客系列】No.1 搭建Hugo博客，快速简洁高效，零成本搭建个人博客"
-description: "告别Hexo，拥抱Hugo"
 date: 2026-01-24
 location: "中国大陆"
 image: https://www.helloimg.com/i/2026/01/24/6974a4a23c638.jpg
