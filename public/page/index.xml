@@ -49,12 +49,14 @@
         
         <guid>http://localhost:1313/about/</guid>
         <description>&lt;h2 id=&#34;-关于victor-rim&#34;&gt;👨‍💻 关于Victor Rim
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;团队&lt;/strong&gt;：RYQi GROUP&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;简要说明&lt;/strong&gt;：2009年出生，吉林人。我不是一个争强好胜的人，但是胜利是我最喜欢的词语之一，我英文本名 George ，也是当初为啥叫乔治网， Victor （初中徐同学的英文名），在我心中这是最好的英文名，所以到高中，我就继承了 Victor 。我是一名中国朝鲜族人，我的姓氏是 임 ，后来以 임 找到了 Rim 这个英文姓氏，只是吧，我朝语水平不佳， 임 作姓氏时有“林”和“任”两种翻译，作林时英文称 Rim ，作任时英文称 Yim ，本来姓任的我糊里糊涂的选择了 Rim 。高中选择理科，但内心最喜欢的仍然是政治学科和历史学科，极度讨厌语文学科，但是却有写随笔的习惯。从 2022 年开始写博客，后来乔治网扔了，就在记事本写一些随笔。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;团队&lt;/strong&gt;：RYQi GROUP&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;爱好&lt;/strong&gt;：摄影、随笔、折腾、羽球&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;技能&lt;/strong&gt;：精通Markdown语言，会一点点Go语言、Python、html，熟练使用Hexo和Hugo建立个人静态博客&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;技能&lt;/strong&gt;：精通 Markdown 语言，会一点点 Go 语言、 Python 、 html ，虽然没学过计算机和编程，但喜欢关注互联网上的各种有趣内容，你正在访问的这个博客，便是我根据网上的教程搭建而成&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;理想大学&lt;/strong&gt;：深圳大学&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;理想职业&lt;/strong&gt;：工程师、程序员、&lt;del&gt;老师&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;理想地区&lt;/strong&gt;：吉林市、韩国京畿道地区、杭州市、南京市&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最高理想&lt;/strong&gt;：环游世界~&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;永远保持好奇心。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -67,7 +69,7 @@
 &lt;p&gt;RYQi GROUP绝对是一只潜力股。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;-关于victory-blog&#34;&gt;🏠 关于Victory Blog
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;博客声明&lt;/strong&gt;：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;博客声明&lt;/strong&gt;：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站。博客文章有四个分类，生活、随笔、折腾、工具分别记录我的生活与思考、心里话、各种折腾、一些好用的工具。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客框架&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo&lt;/a&gt;
 
@@ -110,8 +112,18 @@
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
+，评论交互系统部署于&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vercel&lt;/a&gt;
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
 &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;评论系统&lt;/strong&gt;：目前暂无，计划将采用&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;strong&gt;评论系统&lt;/strong&gt;：采用&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Twikoo&lt;/a&gt;
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -121,7 +133,7 @@
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-,敬请期待~&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;访问统计&lt;/strong&gt;：采用&lt;a class=&#34;link&#34; href=&#34;https://umami.xalaok.top/share/2ndVFyWbLflp6As3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Umami&lt;/a&gt;
 

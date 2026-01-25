@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "对酒当歌，人生几何？"
 description: "👋 Hello，我是Victor Rim"
 aliases:
     - about-us
@@ -9,21 +9,25 @@ layout: "about"
 # 如果你想在左侧边栏显示这个页面，请配置 menu
 url: "/about/"
 # 下面是页面的正文属性
-comments: false # 是否开启评论
+comments: true # 是否开启评论
 ---
 
 ## 👨‍💻 关于Victor Rim
+**简要说明**：2009年出生，吉林人。我不是一个争强好胜的人，但是胜利是我最喜欢的词语之一，我英文本名 George ，也是当初为啥叫乔治网， Victor （初中徐同学的英文名），在我心中这是最好的英文名，所以到高中，我就继承了 Victor 。我是一名中国朝鲜族人，我的姓氏是 임 ，后来以 임 找到了 Rim 这个英文姓氏，只是吧，我朝语水平不佳， 임 作姓氏时有“林”和“任”两种翻译，作林时英文称 Rim ，作任时英文称 Yim ，本来姓任的我糊里糊涂的选择了 Rim 。高中选择理科，但内心最喜欢的仍然是政治学科和历史学科，极度讨厌语文学科，但是却有写随笔的习惯。从 2022 年开始写博客，后来乔治网扔了，就在记事本写一些随笔……
+
 **团队**：RYQi GROUP
 
-**爱好**：摄影、随笔、折腾、羽球
+**爱好**：摄影、随笔、折腾、游泳、羽球
 
-**技能**：精通Markdown语言，会一点点Go语言、Python、html，熟练使用Hexo和Hugo建立个人静态博客
+**技能**：精通 Markdown 语言，会一点点 Go 语言、 Python 、 html ，虽然没学过计算机和编程，但喜欢关注互联网上的各种有趣内容，你正在访问的这个博客，便是我根据网上的教程搭建而成
 
 **理想大学**：深圳大学
 
-**理想职业**：工程师、程序员、~~老师~~
+**理想职业**：工程师、材料化学行业、生物制药行业、程序员、~~老师~~
 
 **理想地区**：吉林市、韩国京畿道地区、杭州市、南京市
+
+**最高理想**：环游世界~
 
 > 永远保持好奇心。
 
@@ -39,15 +43,17 @@ comments: false # 是否开启评论
 > RYQi GROUP绝对是一只潜力股。
 
 ## 🏠 关于Victory Blog
-**博客声明**：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站
+**博客声明**：Victory Blog（ryqi.top）系原George Website（ryqi.ml）的后续，目前ryqi.ml已经不在经营，所有资产也已丢失，目前重新建站。博客文章有四个分类，生活、随笔、折腾、工具分别记录我的生活与思考、心里话、各种折腾、一些好用的工具。
+
+**域名**： ryqi.top 购买自腾讯云， Victor Rim 拥有完整实名信息。 ryqi 就是 RYQi GROUP 吗~ ， 然后熟悉我的，你拼一下 R Y Qi ，你就知道有何寓意了。本来想注册 renvictor.top 或者 rimvictor.top ，后来发现价格和更短的 ryqi.top 一样，还能继承 ryqi.ml 和 ryqi.xyz ，那我就选你了！后期的话，可能会用 victor.ren 最喜欢的域名！！！！ 
 
 **博客框架**：[Hugo](https://gohugo.io/) 0.154.5
 
 **博客主题**：[Stack](https://stack.jimmycai.com/) 3.30.0
 
-**托管部署**：源码托管于[GitHub](https://github.com/)，网站部署于[CloudFlare](https://www.cloudflare.com/)
+**托管部署**：源码托管于[GitHub](https://github.com/)，网站部署于[CloudFlare](https://www.cloudflare.com/)，评论交互系统部署于[Vercel](https://vercel.com/)
 
-**评论系统**：目前暂无，计划将采用[Twikoo](https://twikoo.js.org/),敬请期待~
+**评论系统**：采用[Twikoo](https://twikoo.js.org/)
 
 **访问统计**：采用[Umami](https://umami.xalaok.top/share/2ndVFyWbLflp6As3/)
 
