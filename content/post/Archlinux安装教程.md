@@ -3,7 +3,7 @@ categories:
 - 随笔
 - 折腾
 date: 2026-01-24
-description: 
+description: 本文作者回顾了从Windows转向Linux系统的历程，最终选择了ArchLinux。文章主体是一份详细的ArchLinux安装指南，涵盖分区准备、制作启动盘、联网、磁盘格式化、系统安装、驱动与桌面环境配置、用户设置、引导程序安装及中文软件源配置等步骤。指南基于作者2022年的经验，强调操作细节并提供了具体的命令行指令，旨在帮助用户完成ArchLinux及其KDE桌面环境的安装。
 image: https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg
 location: 中国大陆
 tags:

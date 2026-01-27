@@ -2,7 +2,7 @@
 categories:
 - 工具
 date: 2026-01-24
-description: 
+description: 本文是一份Markdown语法速查表，列举了常用语法及其格式示例。内容涵盖标题、粗体、斜体、引用块、有序与无序列表、代码、分隔线、链接、图片、表格、代码块、脚注、标题编号、定义列表、删除线和任务列表等基本元素，为快速查阅和书写Markdown文档提供参考。
 image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
 location: 中国大陆
 tags:
