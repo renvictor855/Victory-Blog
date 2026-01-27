@@ -2,7 +2,7 @@
 categories:
 - 工具
 date: 2026-01-24
-description: 本文简要介绍了Markdown常用语法，包括标题、粗体、斜体、引用、列表、代码、链接、图片、表格等基础格式，并提及脚注、定义列表、删除线等扩展功能，内容引用自Markdown教程。
+description: 
 image: https://www.helloimg.com/i/2026/01/24/697437960f075.jpg
 location: 中国大陆
 tags:
