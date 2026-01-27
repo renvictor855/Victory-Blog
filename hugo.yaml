@@ -244,8 +244,14 @@ menu:
           url: /changelog/
           params:
               icon: clock
-          weight: 5
+          weight: 6
 
+        - identifier: guestbook
+          name: 留言板
+          url: /guestbook/
+          weight: 5
+          params:
+            icon: messages
     social:
         - identifier: github
           name: GitHub

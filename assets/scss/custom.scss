@@ -1008,3 +1008,59 @@ body, .article-content {
     color: var(--primary);  /* 鼠标指上去变色 */
     transform: translateX(5px); /* 轻轻右移，增加交互感 */
 }
+
+/* 1. 强制隐藏侧边栏滚动条 */
+.sidebar {
+    scrollbar-width: none !important; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none !important; /* Chrome/Safari */
+    }
+}
+
+/* 2. 压缩顶部头像和信息的间距 */
+.sidebar header {
+    padding-top: 20px !important;    /* 缩小顶部留白 */
+    padding-bottom: 10px !important; /* 缩小头像下方留白 */
+
+    .site-avatar {
+        margin-bottom: 10px !important; /* 缩小头像和标题之间的距离 */
+        img {
+            width: 80px !important;     /* 稍微缩小头像尺寸（原尺寸通常较大） */
+            height: 80px !important;
+        }
+    }
+
+    .site-name {
+        margin-bottom: 5px !important;
+        font-size: 1.8rem !important;   /* 稍微调小站点标题字体 */
+    }
+
+    .site-description {
+        margin-bottom: 10px !important;
+        font-size: 1.3rem !important;   /* 缩小描述文字 */
+    }
+}
+
+/* 3. 压缩社交图标区域 */
+.social-menu {
+    margin-top: 10px !important;
+    padding-bottom: 15px !important;
+}
+
+/* 4. 极致压缩菜单项间距 */
+.menu li {
+    margin-bottom: 2px !important; /* 几乎取消项与项之间的外边距 */
+
+    a {
+        padding: 6px 15px !important; /* 极窄的内边距 */
+        
+        svg {
+            width: 22px !important;   /* 缩小图标尺寸 */
+            height: 22px !important;
+        }
+
+        span {
+            font-size: 1.4rem !important; /* 缩小文字字号 */
+        }
+    }
+}

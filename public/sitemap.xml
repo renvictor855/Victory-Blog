@@ -71,6 +71,9 @@
     <loc>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2026-01-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/guestbook/</loc>
+    <lastmod>2024-01-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/page/archives/</loc>
