@@ -447,7 +447,7 @@
         
             <section class="article-meta-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg> 
-                <span class="article-wordCount">825 字</span>
+                <span class="article-wordCount">935 字</span>
             </section>
         
     </footer>
@@ -529,7 +529,7 @@
         <div class="statement-card">
             <div class="st-header">💡 建站历史</div>
             <div class="statement-content">
-                生活记录、避坑指南或者是瞬间的灵感，大段文字写在这里最合适。
+                <strong>2022-03</strong>：Hello World! （采用 WordPress ）<br><br><strong>2022-04</strong>：Hello Hexo! （采用 Hexo + GitHub + CloudFlare ）<br><br><strong>2026-01-03</strong>：Hello Hexo again! （采用 Hexo + GitHub + CloudFlare ）<br><br><strong>2026-01-17</strong>：Goodbye Hexo! （由于之前整坏了，实在不想 debug 了，放弃使用 Hexo ）<br><br><strong>2026-01-21</strong>：Hello Hugo！ （采用 Hugo + GitHub + CloudFlare ）
             </div>
         </div>
     </div>
@@ -904,6 +904,101 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 768px) {
+     
+    .bento-header-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;  
+        gap: 10px !important;
+        padding: 20px 10px !important;
+        align-items: start !important;
+    }
+
+     
+    .avatar-center {
+        grid-column: span 2 !important;  
+        order: -1; 
+        margin: 0 auto 30px auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+     
+    .header-tags {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+     
+    .header-tags.left-side {
+        align-items: flex-end !important;
+    }
+
+     
+    .header-tags.right-side {
+        align-items: flex-start !important;
+    }
+
+     
+    .tag-item {
+        width: auto !important;
+        min-width: 130px;  
+        white-space: nowrap !important;  
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+        text-align: center;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        animation: tagFloat 3s ease-in-out infinite !important;  
+    }
+
+     
+    .bento-dual-grid, 
+    .bento-info-grid, 
+    .bento-personality-grid, 
+    .bento-statement-grid {
+        grid-column: span 2 !important;  
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+     
+    .personality-box, .statement-card, .location-solid-card {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+ 
+.statement-content a {
+    color: #3b82f6 !important;     
+    text-decoration: none;          
+    font-weight: 600;               
+    border-bottom: 1.5px solid rgba(59, 130, 246, 0.3);  
+    transition: all 0.2s ease;      
+    padding: 0 2px;
+}
+
+ 
+.statement-content a:hover {
+    color: #2563eb !important;      
+    background-color: rgba(59, 130, 246, 0.1);  
+    border-bottom-color: #2563eb;   
+    border-radius: 4px;             
+}
+
+ 
+@media (max-width: 768px) {
+    .statement-content a {
+        border-bottom-width: 2px;   
+    }
+}
 </style>
 
 <script>
@@ -1040,7 +1135,7 @@ updateUmami();
         
             
         
-        共 9.19k 字 · 共 12 篇文章
+        共 9.30k 字 · 共 12 篇文章
     </section>
 
     <section class="total-visits">

@@ -589,7 +589,7 @@
         &lt;div class=&#34;statement-card&#34;&gt;
             &lt;div class=&#34;st-header&#34;&gt;💡 建站历史&lt;/div&gt;
             &lt;div class=&#34;statement-content&#34;&gt;
-                生活记录、避坑指南或者是瞬间的灵感，大段文字写在这里最合适。
+                &lt;strong&gt;2022-03&lt;/strong&gt;：Hello World! （采用 WordPress ）&lt;br&gt;&lt;br&gt;&lt;strong&gt;2022-04&lt;/strong&gt;：Hello Hexo! （采用 Hexo + GitHub + CloudFlare ）&lt;br&gt;&lt;br&gt;&lt;strong&gt;2026-01-03&lt;/strong&gt;：Hello Hexo again! （采用 Hexo + GitHub + CloudFlare ）&lt;br&gt;&lt;br&gt;&lt;strong&gt;2026-01-17&lt;/strong&gt;：Goodbye Hexo! （由于之前整坏了，实在不想 debug 了，放弃使用 Hexo ）&lt;br&gt;&lt;br&gt;&lt;strong&gt;2026-01-21&lt;/strong&gt;：Hello Hugo！ （采用 Hugo + GitHub + CloudFlare ）
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -962,6 +962,101 @@
 @media (max-width: 900px) {
     .bento-statement-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+     
+    .bento-header-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;  
+        gap: 10px !important;
+        padding: 20px 10px !important;
+        align-items: start !important;
+    }
+
+     
+    .avatar-center {
+        grid-column: span 2 !important;  
+        order: -1; 
+        margin: 0 auto 30px auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+     
+    .header-tags {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+     
+    .header-tags.left-side {
+        align-items: flex-end !important;
+    }
+
+     
+    .header-tags.right-side {
+        align-items: flex-start !important;
+    }
+
+     
+    .tag-item {
+        width: auto !important;
+        min-width: 130px;  
+        white-space: nowrap !important;  
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+        text-align: center;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        animation: tagFloat 3s ease-in-out infinite !important;  
+    }
+
+     
+    .bento-dual-grid, 
+    .bento-info-grid, 
+    .bento-personality-grid, 
+    .bento-statement-grid {
+        grid-column: span 2 !important;  
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+     
+    .personality-box, .statement-card, .location-solid-card {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+ 
+.statement-content a {
+    color: #3b82f6 !important;     
+    text-decoration: none;          
+    font-weight: 600;               
+    border-bottom: 1.5px solid rgba(59, 130, 246, 0.3);  
+    transition: all 0.2s ease;      
+    padding: 0 2px;
+}
+
+ 
+.statement-content a:hover {
+    color: #2563eb !important;      
+    background-color: rgba(59, 130, 246, 0.1);  
+    border-bottom-color: #2563eb;   
+    border-radius: 4px;             
+}
+
+ 
+@media (max-width: 768px) {
+    .statement-content a {
+        border-bottom-width: 2px;   
     }
 }
 &lt;/style&gt;

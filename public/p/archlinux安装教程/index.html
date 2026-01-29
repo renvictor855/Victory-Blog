@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="本文作者回顾了从Windows转向Linux系统的历程，最终选择了ArchLinux。文章主体是一份详细的ArchLinux安装指南，涵盖分区准备、制作启动盘、联网、磁盘格式化、系统安装、驱动与桌面环境配置、用户设置、引导程序安装及中文软件源配置等步骤。指南基于作者2022年的经验，强调操作细节并提供了具体的命令行指令，旨在帮助用户完成ArchLinux及其KDE桌面环境的安装。">
 <title>ArchLinux安装教程</title>
 
 <link rel='canonical' href='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 
-<link rel="stylesheet" href="/scss/style.min.b5be28254488957edeb4733ae48563a1d4742302ba5a829244eb2b0db0849837.css"><meta property='og:title' content="ArchLinux安装教程">
-<meta property='og:description' content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n">
+<link rel="stylesheet" href="/scss/style.min.d30cc42a1ea6fa0aec422a0e3cb22a144c994069880344ecc3c45905949f3ec5.css"><meta property='og:title' content="ArchLinux安装教程">
+<meta property='og:description' content="本文作者回顾了从Windows转向Linux系统的历程，最终选择了ArchLinux。文章主体是一份详细的ArchLinux安装指南，涵盖分区准备、制作启动盘、联网、磁盘格式化、系统安装、驱动与桌面环境配置、用户设置、引导程序安装及中文软件源配置等步骤。指南基于作者2022年的经验，强调操作细节并提供了具体的命令行指令，旨在帮助用户完成ArchLinux及其KDE桌面环境的安装。">
 <meta property='og:url' content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='Victory Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='随笔' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='教程' /><meta property='article:published_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
 <meta name="twitter:title" content="ArchLinux安装教程">
-<meta name="twitter:description" content="这是一篇乔治网（George Website）的遗产，之前发表在了知乎，现在改了改，写了一些随笔，重新发布在 Victory Blog\n前言\r我一直以来是 Windows 的忠实用户，从古老的 xp 到 2003 到 visit 到 win7 ， win8 &hellip;我都用过，大多数的感受是微软再也不震撼人心了&hellip;\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="本文作者回顾了从Windows转向Linux系统的历程，最终选择了ArchLinux。文章主体是一份详细的ArchLinux安装指南，涵盖分区准备、制作启动盘、联网、磁盘格式化、系统安装、驱动与桌面环境配置、用户设置、引导程序安装及中文软件源配置等步骤。指南基于作者2022年的经验，强调操作细节并提供了具体的命令行指令，旨在帮助用户完成ArchLinux及其KDE桌面环境的安装。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://www.helloimg.com/i/2026/01/24/69749fe70cc69.jpg' />
     <link rel="shortcut icon" href="/favicon.jpg" />
 <script defer src="https://cloud.umami.is/script.js" data-website-id="081baf2f-14bc-4c0b-bc5d-1304323b0850"></script>
@@ -426,6 +426,34 @@
             <a href="/p/archlinux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">ArchLinux安装教程</a>
         </h2>
     
+        
+        <div class="ai-summary-card">
+            <div class="ai-badge">
+                <span class="ai-badge-icon">✨</span>
+                <span class="ai-badge-text">DeepSeek AI 摘要</span>
+            </div>
+            <h3 class="article-subtitle is-typing" id="typed-summary-8a4de725e6b8a5466c4bf2fafa04c745"></h3>
+        </div>
+        
+        <script>
+            (function() {
+                const initTyped = () => {
+                    if (window.Typed) {
+                        new Typed('#typed-summary-8a4de725e6b8a5466c4bf2fafa04c745', {
+                            strings: ["本文作者回顾了从Windows转向Linux系统的历程，最终选择了ArchLinux。文章主体是一份详细的ArchLinux安装指南，涵盖分区准备、制作启动盘、联网、磁盘格式化、系统安装、驱动与桌面环境配置、用户设置、引导程序安装及中文软件源配置等步骤。指南基于作者2022年的经验，强调操作细节并提供了具体的命令行指令，旨在帮助用户完成ArchLinux及其KDE桌面环境的安装。"],
+                            typeSpeed: 45,
+                            startDelay: 600,
+                            showCursor: true,
+                            cursorChar: '_',
+                            loop: false
+                        });
+                    } else {
+                        setTimeout(initTyped, 100);
+                    }
+                };
+                initTyped();
+            })();
+        </script>
         
     </div>
 
@@ -923,7 +951,7 @@
         
             
         
-        共 9.78k 字 · 共 12 篇文章
+        共 9.19k 字 · 共 12 篇文章
     </section>
 
     <section class="total-visits">

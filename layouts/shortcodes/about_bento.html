@@ -67,7 +67,7 @@
         <div class="statement-card">
             <div class="st-header">💡 建站历史</div>
             <div class="statement-content">
-                {{ .Get "my_thoughts" | default "生活记录、避坑指南或者是瞬间的灵感，大段文字写在这里最合适。" }}
+                {{ .Get "my_thoughts" | replaceRE "\\\\n" "<br>" | markdownify }}
             </div>
         </div>
     </div>
@@ -440,6 +440,101 @@
 @media (max-width: 900px) {
     .bento-statement-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. 强制头部变为两列网格 */
+    .bento-header-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* 强制平分左右 */
+        gap: 10px !important;
+        padding: 20px 10px !important;
+        align-items: start !important;
+    }
+
+    /* 2. 头像：横跨两列并居中 */
+    .avatar-center {
+        grid-column: span 2 !important; /* 占据整行 */
+        order: -1; 
+        margin: 0 auto 30px auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    /* 3. 标签容器：消除原本的左右容器限制，让它们各自占一列 */
+    .header-tags {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    /* 左侧列：内容向右对齐（靠向中间） */
+    .header-tags.left-side {
+        align-items: flex-end !important;
+    }
+
+    /* 右侧列：内容向左对齐（靠向中间） */
+    .header-tags.right-side {
+        align-items: flex-start !important;
+    }
+
+    /* 4. 标签块专项优化：解决换行和对齐 */
+    .tag-item {
+        width: auto !important;
+        min-width: 130px; /* 给个保底宽度，防止太短 */
+        white-space: nowrap !important; /* 理想大学强制一行 */
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+        text-align: center;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        animation: tagFloat 3s ease-in-out infinite !important; /* 动画保留 */
+    }
+
+    /* 5. 下方所有大块：强制 100% 宽度，一行一卡 */
+    .bento-dual-grid, 
+    .bento-info-grid, 
+    .bento-personality-grid, 
+    .bento-statement-grid {
+        grid-column: span 2 !important; /* 在 header 容器内如果还有这些块，也要占满 */
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    /* 确保大卡片内部的元素不缩水 */
+    .personality-box, .statement-card, .location-solid-card {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* 针对所有卡片内链接的统一样式 */
+.statement-content a {
+    color: #3b82f6 !important;    /* 科技蓝色，一眼就能看出是链接 */
+    text-decoration: none;         /* 先去掉丑丑的默认下划线 */
+    font-weight: 600;              /* 加粗一点 */
+    border-bottom: 1.5px solid rgba(59, 130, 246, 0.3); /* 淡淡的底线标注 */
+    transition: all 0.2s ease;     /* 增加过渡动画 */
+    padding: 0 2px;
+}
+
+/* 鼠标放上去的效果：背景变亮，底线加深 */
+.statement-content a:hover {
+    color: #2563eb !important;     /* 深蓝色 */
+    background-color: rgba(59, 130, 246, 0.1); /* 浅蓝色背景块 */
+    border-bottom-color: #2563eb;  /* 底线颜色加深 */
+    border-radius: 4px;            /* 圆角背景 */
+}
+
+/* 针对移动端优化：点击感更强 */
+@media (max-width: 768px) {
+    .statement-content a {
+        border-bottom-width: 2px;  /* 手机端下划线厚一点，方便看 */
     }
 }
 </style>
